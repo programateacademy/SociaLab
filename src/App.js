@@ -1,12 +1,16 @@
 import React from 'react';
 import './App.css';
+import Services from './components/services/Services';
 
 
 
 function App() {
   return (
-    <div>Hello</div>
+    <>
+    <Services/>
+    <footer/>
+    </>
   );
-}
+};
 
 export default App;
