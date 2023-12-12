@@ -1,11 +1,16 @@
-import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Portfolio from './components/portfolio/Portfolio';
+import Ods from './pages/odsDetail/Ods';
 
-
-const App = () => {
+function App() {
   return (
-    <Portfolio />
+    <Router>
+      <Routes>
+        <Route path="/" element={<Portfolio />} />
+        <Route path="/ods/:id" element={<Ods />} />
+      </Routes>
+    </Router>
   );
-};
+}
 
 export default App;
