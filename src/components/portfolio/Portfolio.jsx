@@ -1,30 +1,37 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { odsData } from '../../data/odsData';
-import { projectsBySDG } from '../../data/data';
 import './Portfolio.css';
 
-const Portfolio = () => {
-  const odsCards = odsData.map((ods) => {
-    const { id, image } = ods;
-    const associatedProjects = projectsBySDG[`ODS ${id}`] || [];
-    const linkEnabled = associatedProjects.length > 0;
+import ODS1 from '../../assets/ODS1.png';
+import ODS2 from '../../assets/ODS2.png';
+import ODS3 from '../../assets/ODS3.png';
 
-    return (
-      <Link to={linkEnabled ? `/ruta/${id}` : '/ruta'} key={id} className={`ods-card ${linkEnabled ? '' : 'disabled'}`} onClick={linkEnabled ? null : (e) => e.preventDefault()}>
-        <img src={image} alt={`ODS ${id}`} />
-      </Link>
-    );
-  });
+const Portfolio = () => {
+  const images = {
+    ODS1: ODS1.default,
+    ODS2: ODS2.default,
+    ODS3: ODS3.default,
+  };
+
+  const imageNames = ['ODS1', 'ODS2', 'ODS3'];
 
   return (
-    <>
+    <div className="container">
       <h1>PORTAFOLIO</h1>
       <p>
         Te invitamos a explorar nuestro portafolio completo, donde hemos recopilado cuidadosamente el contenido que creemos será de tu interés. Descubre la variedad y calidad de nuestras propuestas a medida que navegas por las siguientes páginas.
       </p>
-      <div className="portfolio">{odsCards}</div>
-    </>
+      <div className="portfolio">
+        {imageNames.map((imageName, index) => (
+          <div key={index} className="project">
+            <img src={images[imageName]} alt={`Imagen ${index + 1}`} />
+          </div>
+        ))}
+      </div>
+      <div>
+        <img src={ODS1} alt="ODS1" />
+        <img src={ODS2} alt="ODS1" />
+      </div>
+    </div>
   );
 };
 
