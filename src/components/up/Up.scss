@@ -1,0 +1,25 @@
+/* ButtonUp.scss */
+
+.button-up {
+  position: fixed;
+  bottom: 15px;
+  right: 50%;
+  transform: translateX(100%);
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 20.5px 20.5px 20.5px 20.5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  
+}
+
+.button-up:hover {
+  background-color: #fdc300;
+  color: #000;
+}
+
+.button-up.visible {
+  display: block;
+}
+
