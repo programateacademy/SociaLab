@@ -1,6 +1,6 @@
 import React, { useState, useEffect} from 'react';
 import { SlArrowUp } from 'react-icons/sl';
-import "./Up.scss";
+import "./Up.css";
 
 const ButtonUp = () => {
   const [isVisible, setIsVisible] = useState(false);
