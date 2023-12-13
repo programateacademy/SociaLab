@@ -1,0 +1,162 @@
+@font-face {
+  font-family: 'Gilroy ExtraBold';
+  src: url('../../assets/fonts/FONTSFREE-NET-GILROY-EXTRABOLD.TTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gilroy Light';
+  src: url('../../assets/fonts/GILROY-LIGHT.TTF') format('truetype');
+}
+
+.cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  max-width: 1280px;
+  padding: 0 100px 0 100px;
+  margin: 0 auto 0;
+  margin-bottom: 154px;
+}
+
+h1, h2 {
+  font-family: 'Gilroy ExtraBold';
+  font-size: 32px;
+  margin-bottom: 70px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-family: 'Gilroy ExtraBold';
+  font-size: 24px;
+  margin-bottom: 70px;
+}
+
+p {
+  font-family: 'Gilroy Light';
+  font-size: 20px;
+}
+
+.portfolio,
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-sizing: border-box;
+  max-width: 1280px;
+  margin: 20px auto;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(5, 0fr);
+  gap: 90px 10px;
+  margin-top: 5%;
+}
+
+.ods-card {
+  display: inline-block;
+  transition: transform 0.3s;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 130px;
+  height: 130px;
+  position: relative;
+}
+
+.ods-card:hover {
+  transform: scale(1.2);
+  transition: 1s;
+}
+
+.project-count {
+  background: linear-gradient(180deg, rgba(253, 195, 0, 0.6), transparent);
+  border-radius: 10px;
+  width: 150px;
+  height: 100px;
+  font-family: 'Gilroy ExtraBold';
+  color: black;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: -8%;
+}
+.disabled-card:hover {
+  opacity: 0.5;
+
+}
+
+@media (max-width: 768px) {
+  .ods-card {
+    min-width: 150px;
+    height: 250px;
+    margin: 0.1rem;
+    margin: 20px auto;
+  }
+
+  .ods-card__img {
+    height: 250px;
+  }
+
+  .ods-card__title {
+    font-size: 0.9rem;
+  }
+
+  .ods-card__runtime,
+  .ods-card__description {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cont {
+    margin: auto;
+    align-items: center; 
+    justify-content: center;
+    text-align: left;
+    padding: 0;
+    width: 90%;
+    height: 100%;
+  }
+
+  .portfolio {
+    grid-template-columns: repeat(2, 0fr);
+    gap: 10px;
+    margin-top: 5%;
+
+  }
+
+  p{
+    font-size: 16px;
+    margin: 0 auto;
+  }
+
+  .ods-card {
+    min-width: 120px;
+    height: 120px;  
+    margin: auto;
+  }
+
+  .ods-card__img {
+    height: 200px;
+  }
+  .ods-card:hover {
+    transform: scale(1.1);
+    transition: 1s;
+  }
+  .project-count {
+    width: 98%;
+    margin: 0 auto;
+    height: 50%;
+    font-size: 20px;
+    transform: scale(1.1);
+  }
+
+}

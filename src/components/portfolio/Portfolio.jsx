@@ -1,7 +1,49 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
+import "./Portfolio.css";
+import { Link } from "react-router-dom";
+import { projectData, projectsBySDG } from "../../data/data";
+
+import ODS1 from "../../assets/ODS1.png";
+import ODS2 from "../../assets/ODS2.png";
+import ODS3 from "../../assets/ODS3.png";
+import ODS4 from "../../assets/ODS4.png";
+import ODS5 from "../../assets/ODS5.png";
+import ODS6 from "../../assets/ODS6.png";
+import ODS7 from "../../assets/ODS7.png";
+import ODS8 from "../../assets/ODS8.png";
+import ODS9 from "../../assets/ODS9.png";
+import ODS10 from "../../assets/ODS10.png";
+import ODS11 from "../../assets/ODS11.png";
+import ODS12 from "../../assets/ODS12.png";
+import ODS13 from "../../assets/ODS13.png";
+import ODS14 from "../../assets/ODS14.png";
+import ODS15 from "../../assets/ODS15.png";
+import ODS16 from "../../assets/ODS16.png";
+import ODS17 from "../../assets/ODS17.png";
+
+import ODSCOLOR1 from "../../assets/ODSCOLOR1.png";
+import ODSCOLOR2 from "../../assets/ODSCOLOR2.png";
+import ODSCOLOR3 from "../../assets/ODSCOLOR3.png";
+import ODSCOLOR4 from "../../assets/ODSCOLOR4.png";
+import ODSCOLOR5 from "../../assets/ODSCOLOR5.png";
+import ODSCOLOR6 from "../../assets/ODSCOLOR6.png";
+import ODSCOLOR7 from "../../assets/ODSCOLOR7.png";
+import ODSCOLOR8 from "../../assets/ODSCOLOR8.png";
+import ODSCOLOR9 from "../../assets/ODSCOLOR9.png";
+import ODSCOLOR10 from "../../assets/ODSCOLOR10.png";
+import ODSCOLOR11 from "../../assets/ODSCOLOR11.png";
+import ODSCOLOR12 from "../../assets/ODSCOLOR12.png";
+import ODSCOLOR13 from "../../assets/ODSCOLOR13.png";
+import ODSCOLOR14 from "../../assets/ODSCOLOR14.png";
+import ODSCOLOR15 from "../../assets/ODSCOLOR15.png";
+import ODSCOLOR16 from "../../assets/ODSCOLOR16.png";
+import ODSCOLOR17 from "../../assets/ODSCOLOR17.png";
+
+
 const Portfolio = () => {
-  return (
-    <div>Portfolio</div>
-  )
+  return (
+    <div>Portfolio</div>
+  )
 }
+
 export default Portfolio
