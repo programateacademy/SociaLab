@@ -1,4 +1,3 @@
-export default App;
 import React from 'react'
 const App = () => {
   return (
