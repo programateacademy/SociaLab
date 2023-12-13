@@ -1,4 +1,4 @@
-body {
+.grid {
   background-image: url("../../assets/img/HOME-removebg-preview 2.png"), 
   url("../../assets/img/HOME-removebg-preview 3.png");
   background-size: 25%, 30%; /* Ajusta el tamaño según tu preferencia */
@@ -10,7 +10,7 @@ body {
   height: 100vh;
 }
 
-.grid {
+.info-container {
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -39,7 +39,7 @@ body {
     width: 100%;
   }
 
-  img {
+  .info-image {
     max-width: 100%;
     height: auto;
   }
