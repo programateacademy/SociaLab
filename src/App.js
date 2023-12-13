@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Portfolio from './components/portfolio/Portfolio';
 import Ods from './pages/odsDetail/Ods';
+import Home from './pages/home/home/Home';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Portfolio />} />
+        <Route path="/" element={<Home />} />
         <Route path="/ods/:id" element={<Ods />} />
       </Routes>
     </Router>

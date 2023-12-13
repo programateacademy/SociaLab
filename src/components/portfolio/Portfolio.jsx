@@ -98,7 +98,7 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="cont">
+    <div className="cont" id="portfolio">
       <h1 className="title">Proyectos</h1>
       <p>Te invitamos a explorar nuestro portafolio completo, donde hemos recopilado cuidadosamente el contenido que creemos será de tu interés. Descubre la variedad y calidad de nuestras propuestas a medida que navegas por las siguientes páginas.</p>
       <div className="container">

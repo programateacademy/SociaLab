@@ -55,7 +55,7 @@ p {
   display: grid;
   grid-template-columns: repeat(5, 0fr);
   gap: 90px 10px;
-  margin-top: -5%;
+  margin-top: 5%;
 }
 
 .ods-card {
@@ -93,8 +93,6 @@ p {
 
 }
 
-
-/* Media queries */
 @media (max-width: 768px) {
   .ods-card {
     min-width: 150px;
@@ -117,7 +115,6 @@ p {
   }
 }
 
-/* Estilos para dispositivos más pequeños */
 @media (max-width: 480px) {
   .cont {
     margin: auto;
@@ -127,13 +124,12 @@ p {
     padding: 0;
     width: 90%;
     height: 100%;
-
   }
 
   .portfolio {
     grid-template-columns: repeat(2, 0fr);
     gap: 10px;
-    margin-top: auto;
+    margin-top: 5%;
 
   }
 
