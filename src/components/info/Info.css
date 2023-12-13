@@ -1,10 +1,11 @@
 body {
-  background-image: url("../../assets/img/Home.png"), 
-  url("../../assets/img/Homme.png");
+  background-image: url("../../assets/img/HOME-removebg-preview 2.png"), 
+  url("../../assets/img/HOME-removebg-preview 3.png");
   background-size: 25%, 30%; /* Ajusta el tamaño según tu preferencia */
   background-position: top left, bottom right;
   background-repeat: no-repeat;
   margin: 10%;
+  justify-content: center;
   display: flex;
   height: 100vh;
 }
