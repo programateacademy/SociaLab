@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Ods from './pages/odsDetail/Ods';
-import Home from './pages/home/home/Home';
 import Portfolio from './components/portfolio/Portfolio';
 
 function App() {
