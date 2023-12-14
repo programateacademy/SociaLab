@@ -1,4 +1,7 @@
 import info from "../../assets/img/info.png";
+import Home from "../../assets/img/Home.png";
+import Homme from "../../assets/img/Homme.png";
+
 import "./Info.css";
 
 const Info = () => {
