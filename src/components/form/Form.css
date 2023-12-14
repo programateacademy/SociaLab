@@ -1,0 +1,80 @@
+.field {
+    margin-bottom: 10px;
+  }
+  
+/*input {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%; 
+}
+
+.cuadros {
+    display: grid;
+    grid-column: 3;
+    grid-row: 1;
+}*/
+.container{
+    display: flex;
+    padding: 20px 10px 10px 10px;
+    position: relative;
+    justify-content: right;
+    background-color: rgba(253, 195, 0, 0.20);
+    border-radius: 15px;
+}
+
+input {
+    display: flex;
+    background-color: transparent;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    width: 350px;
+    padding: 10px;
+    margin: 8px;
+    border-radius: 12px;
+}
+
+select {
+    display: flex;
+    background-color: transparent;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    width: 350px;
+    padding: 10px;
+    margin: 8px;
+    border-radius: 12px;
+}
+
+option {
+    display: flex;
+    background-color: transparent;
+    padding: 12px 20px;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+
+textarea {
+    display: flex;
+    background-color: transparent;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    width: 350px;
+    padding: 10px;
+    margin: 8px;
+    border-radius: 12px;
+}
+
+button{
+    display: flex;
+    height: 30px;
+    padding: 14px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid #000;
+    background: rgba(253, 195, 0, 0.40);
+}
