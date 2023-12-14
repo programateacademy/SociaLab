@@ -14,7 +14,7 @@ const Info = () => {
         </p>
       </div>
       <div className="image-container">
-        <img className="info-img"  src={info} alt="imagen representativa de informacion"/>
+        <img className="info-image"  src={info} alt="imagen representativa de informacion"/>
       </div>
     </div>
   );
