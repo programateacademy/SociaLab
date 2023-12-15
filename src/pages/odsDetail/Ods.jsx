@@ -2,8 +2,6 @@ import React from "react";
 import "./Ods.css";
 import { useParams } from "react-router-dom";
 import { projectData } from "../../data/data";
-import Navbar from "../../components/navbar/Navbar";
-import Footer from "../../components/footer/Footer";
 
 import ODSCOLOR1 from "../../assets/ODSCOLOR1.png";
 import ODSCOLOR2 from "../../assets/ODSCOLOR2.png";
@@ -87,7 +85,6 @@ function Ods() {
 
   return (
     <>
-    <Navbar />
     <div className="container">
       <div className="ods">
         <img  src={currentODS.image} alt={currentODS.name} />
@@ -114,7 +111,6 @@ function Ods() {
         </div>
       ))}
     </div>
-    <Footer />
     </>
   );
 }
