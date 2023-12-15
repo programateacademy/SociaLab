@@ -1,28 +1,52 @@
-.field {
-    margin-bottom: 10px;
+@font-face {
+    font-family: 'Gilroy ExtraBold';
+    src: url('../../assets/fonts/GILROY-EXTRABOLD.TTF') format('truetype');
   }
   
-/*input {
+  @font-face {
+    font-family: 'Gilroy Light';
+    src: url('../../assets/fonts/GILROY-LIGHT.TTF') format('truetype');
+  }
+
+
+.container{
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 20% 20% 20% 20% 20%; 
+    grid-template-columns: repeat(2, 40%);
+    padding: 50px;
+    margin: 20px 100px;
 }
 
-.cuadros {
+.containerForm{
     display: grid;
-    grid-column: 3;
-    grid-row: 1;
-}*/
-.container{
-    display: flex;
-    padding: 20px 10px 10px 10px;
-    position: relative;
-    justify-content: right;
+    grid-template-columns: repeat(1, 50%);
+    width: 400px;
+    padding: 60px;
+    margin: 20px 100px;
     background-color: rgba(253, 195, 0, 0.20);
     border-radius: 15px;
 }
 
-input {
+.tituloForm{
+    color: #FDC300;
+    font-family: 'Gilroy ExtraBold';
+    font-size: 48px;
+    font-style: normal;
+    line-height: normal;
+}
+
+.parrafoForm{
+    height: 164px;
+    flex-shrink: 0;
+    align-self: stretch;
+    color: #000;
+    font-family: 'Gilroy Light';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.input {
     display: flex;
     background-color: transparent;
     flex-direction: column;
@@ -30,51 +54,83 @@ input {
     align-items: right;
     width: 350px;
     padding: 10px;
-    margin: 8px;
+    margin: 10px;
     border-radius: 12px;
+    border: 1px solid #000;
+    font-family: 'Gilroy Light';
+    font-size: 1em;
 }
+/*  width: 100%;
+    max-width: 300px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;  
+    
 
-select {
+    max-width: 100%;
+    width: 300px;*/
+
+.select {
     display: flex;
     background-color: transparent;
     flex-direction: column;
     justify-content: center;
-    align-items: right;
-    width: 350px;
+    width: 373px;
     padding: 10px;
-    margin: 8px;
+    margin: 10px;
     border-radius: 12px;
+    border: 1px solid #000;
+    font-family: 'Gilroy Light';
+    font-size: 1em;
 }
 
-option {
-    display: flex;
+.option {
+    width: 20px;
     background-color: transparent;
     padding: 12px 20px;
-    align-items: flex-start;
-    gap: 10px;
+    margin: 10px;
     align-self: stretch;
+    border: 1px solid #000;
+    font-family: 'Gilroy Light';
+    font-size: 1em;
 }
 
-textarea {
+.textarea {
     display: flex;
     background-color: transparent;
-    flex-direction: column;
     justify-content: center;
     align-items: right;
     width: 350px;
     padding: 10px;
-    margin: 8px;
+    margin: 10px;
     border-radius: 12px;
+    border: 1px solid #000;
+    font-family: 'Gilroy Light';
+    font-size: 1em;
 }
 
-button{
+.button{
     display: flex;
     height: 30px;
     padding: 14px 20px;
+    position: absolute;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    border-radius: 8px;
+    margin: 520px auto auto 150px;
+    border-radius: 15px;
     border: 1px solid #000;
     background: rgba(253, 195, 0, 0.40);
+    font-family: 'Gilroy Extrabold';
+    font-size: 1em;
+}
+
+@media (max-width: 1000px) {
+    .container{
+        display: flex;
+        padding: 20px 10px 10px 10px;
+        position: relative;
+        justify-content: right;
+        background-color: rgba(253, 195, 0, 0.20);
+        border-radius: 15px;
+    }
 }
