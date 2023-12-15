@@ -1,6 +1,5 @@
-import React, { Children } from "react";
-import { Link } from "react-router-dom";
-import LogoEdu from "../../assets/LogEducaMas.jpg";
+import React from "react";
+import LogoEdu from "../../assets/img/LogEducaMas.jpg";
 
 const Navbar = () => {
   return (
@@ -27,7 +26,6 @@ const Navbar = () => {
           <li>
             <a href="#form" className="btn3">FORMULARIO</a>
           </li>
-          {Children}
         </ul>
       </nav>
     </div>
