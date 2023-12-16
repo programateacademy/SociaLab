@@ -1,8 +1,14 @@
 import React from 'react'
+import Navbar from '../../../components/navbar/Navbar';
+import Services from '../../../components/services/Services';
+import Portfolio from '../../../components/portfolio/Portfolio';
+import Form from '../../../components/form/Form';
+
 
 const Home = () => {
   return (
     <>
+    <Navbar />
     <div>Construimos Softeard Moderno</div>
     <div>
     <div id="carouselExampleFade" class="carousel slide carousel-fade">
@@ -27,6 +33,9 @@ const Home = () => {
   </button>
 </div>
        </div>
+       <Services />
+       <Portfolio />
+       <Form />
     </>
   )
 }

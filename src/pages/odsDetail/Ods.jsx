@@ -2,6 +2,7 @@ import React from "react";
 import "./Ods.css";
 import { useParams } from "react-router-dom";
 import { projectData } from "../../data/data";
+import Navbar from "../../components/navbar/Navbar";
 
 import ODSCOLOR1 from "../../assets/ODSCOLOR1.png";
 import ODSCOLOR2 from "../../assets/ODSCOLOR2.png";
@@ -43,8 +44,6 @@ const ODSDescriptions = {
 
 function Ods() {
   const { id } = useParams();
-
-  // Mapear el número de ID a su ODS correspondiente
   const odsGoals = {
     1: "ODS 1",
     2: "ODS 2",
@@ -85,7 +84,8 @@ function Ods() {
 
   return (
     <>
-    <div className="container">
+    <Navbar />
+    <div className="containerr">
       <div className="ods">
         <img  src={currentODS.image} alt={currentODS.name} />
         <h1>{currentODS.name}</h1>

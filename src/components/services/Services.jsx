@@ -5,6 +5,7 @@ import './Services.css';
 const Services = () => {
     return (
       <>
+      <div id='services'>
          <div className='servicio'>
            <h1>NUESTROS SERVICIOS</h1>
            <p>
@@ -12,7 +13,6 @@ const Services = () => {
             al fortalecimiento de estas organizaciones y al beneficio de sus usuarios.
            </p>
          </div>
-         <container id='container'>
          <div className='landing'>
             <h2>CREACION DE LANDING PAGE</h2>
            <p>
@@ -37,7 +37,7 @@ const Services = () => {
             Permitimos que las organizaciones se enfoquen en la ejecución exitosa de sus proyectos.
             </p>
           </div>
-        </container>
+        </div>
       </>
     );
   };
