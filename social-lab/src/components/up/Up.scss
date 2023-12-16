@@ -1,0 +1,25 @@
+.button-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 100%;
+  padding: 0.50rem 0.5rem 0.25rem 0.5rem; // 20px;
+  cursor: pointer;
+  display: none;
+  transition: background-color 0.3s;
+
+  span {
+    font-size: 20px;
+  }
+
+  &:hover {
+    background-color: #F8E074;
+  }
+}
+
+.button-up.visible {
+  display: block;
+}
