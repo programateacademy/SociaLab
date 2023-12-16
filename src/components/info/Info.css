@@ -1,57 +1,120 @@
-body {
-  background-image: url("../../assets/img/Home.png"), 
-  url("../../assets/img/Homme.png");
-  background-size: 25%, 30%; /* Ajusta el tamaño según tu preferencia */
-  background-position: top left, bottom right;
-  background-repeat: no-repeat;
-  margin: 10%;
+.nosotros{
+
   display: flex;
-  height: 100vh;
+  color: #000;
+  text-align: center;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.obj {
+  font-size: 25px;
+
+}
+
+.parrafo {
+  font-size: 20px;
 }
 
 .grid {
-
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr 1fr;
-  background-size: 50% 50%;
+  grid-gap: 20px;
+  background-size: cover;/* Ajusta el tamaño para cubrir completamente el contenedor */
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;/* Ajusta el ancho al 100% para ocupar toda la pantalla */
+}
+.nosotros {
+  position: relative;
+}
+
+#sobreNosotros::before,
+#sobreNosotros::after {
+  content: '';
+  position: absolute;
   background-repeat: no-repeat;
-  margin: 1%;
+  background-size: cover;
+}
+
+#sobreNosotros::before {
+  content: url('../../assets/img/Home.png'); /* Ruta de la imagen para la parte superior izquierda */
+  top: 0;
+  left: 0;
+  width: -50%; 
+  height: -50%; 
+}
+
+#sobreNosotros::after {
+  content: url('../../assets/img/Homme.png'); /* Ruta de la imagen para la parte inferior izquierda */
+  top: -50%;
+  left: 10%;
+  width: 0%; 
+  height: 0%;  
+}
+
+.info-container {
+  padding: 20vh;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  justify-items: center;
-  border: 0 solid #000;
+  max-width: 1280px;
+
 }
 
 .image-container {
-  margin: 1.9%;
+  
   display: flex;
-  height: 38vh;
-  width: 190.0%;
-  background-image: url('./assets/img/informacion.png');
+  max-width: 1280px; /* Ajusta el ancho al 100% */
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   justify-content: center;
+  align-items: center;
+}
 
-  @media (max-width: 1280px) {
-    width: 100%;
+.info-img {
+  max-width: 1280px;
+  height: auto;
+  justify-content: center;
+}
+
+
+
+/* Estilos para dispositivos móviles y tabletas */
+@media screen and (max-width: 1280px) {
+
+  .nosotros {
+    max-width: 100%; /* Utiliza el ancho completo del dispositivo */
+    margin: 10px; /* Margen más pequeño para dispositivos más pequeños */
+    padding: 10px; /* Ajustar el espaciado interno */
+
   }
 
-  img {
-    max-width: 100%;
+  .grid {
+    grid-template-columns: 1fr;
+    margin: 10px; /* Margen más pequeño para dispositivos más pequeños */
+  }
+
+  .info-container,
+  .image-container {
+    order: 2;
+    max-width: 100%; /* Utiliza el ancho completo del dispositivo */
     height: auto;
+    margin: 10px; /* Margen más pequeño para dispositivos más pequeños */
+    padding: 10px; /* Ajustar el espaciado interno */
   }
 }
 
 .title {
-    font-family: 'Gilroy-Extrabold', sans-serif; /* Cambia 'Gilroy-Extrabold' según el nombre de tu fuente */
-  }
+  font-family: 'Gilroy-Extrabold', sans-serif;
+}
 
-  .subtitle {
-    font-family: 'Gilroy-Extrabold', sans-serif; /* Cambia 'Gilroy-Extrabold' según el nombre de tu fuente */
-  }
+.subtitle {
+  font-family: 'Gilroy-Extrabold', sans-serif;
+}
 
-  .paragraph {
-    font-family: 'Gilroy-Light', sans-serif;  /* Cambia 'Gilroy-Light' según el nombre de tu fuente */
-  }
+.paragraph {
+  font-family: 'Gilroy-Light', sans-serif;
+}
