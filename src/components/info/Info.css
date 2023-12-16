@@ -12,7 +12,7 @@
 
 }
 
-p {
+.parrafo {
   font-size: 20px;
 }
 
@@ -29,26 +29,28 @@ p {
   position: relative;
 }
 
-.nosotros::before,
-.nosotros::after {
+#sobreNosotros::before,
+#sobreNosotros::after {
   content: '';
   position: absolute;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.nosotros::before {
+#sobreNosotros::before {
   content: url('../../assets/img/Home.png'); /* Ruta de la imagen para la parte superior izquierda */
-  top: -100%;
-  left: -1%;
-  width: 0%; /* Ajusta según sea necesario */
-  height: 0%; /* Ajusta según sea necesario */
+  top: 0;
+  left: 0;
+  width: -50%; 
+  height: -50%; 
 }
 
-.nosotros::after {
+#sobreNosotros::after {
   content: url('../../assets/img/Homme.png'); /* Ruta de la imagen para la parte inferior izquierda */
-  bottom: -2900%;
-  left: 17.9%;
+  top: -50%;
+  left: 10%;
+  width: 0%; 
+  height: 0%;  
 }
 
 .info-container {
