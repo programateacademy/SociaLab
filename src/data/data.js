@@ -23,6 +23,7 @@ export const projectData = [
       summary: 'Apoyamos  la Creación de una plataforma digital que ofreze metodologías, herramientas, capacitaciones e información referente a estrategias de salud y desarrollo social con enfoque intercultural y trabajo comunitario para tomadores de decisiones, personal de la salud, instituciones públicas y comunidades. ',
       impactLocation: 'Amazonas',
       sustainableDevelopmentGoals: ['ODS 3', 'ODS 4', 'ODS 10', 'ODS 17'],
+      gitUrl2: 'https://github.com/programateacademy/4-Sinergias-Alianzas-Front-end',
       image: [ ODSCOLOR3, ODSCOLOR4, ODSCOLOR10, ODSCOLOR17], 
     },
     {
@@ -31,6 +32,8 @@ export const projectData = [
       summary: 'Creamos la  otimizacion el tiempo de realizacion de los formatos que asigna los mercados del Bienestar familiar a los niños algunas localidades de Bogotá, minimizando  de asignacion y error de los mismos apoyando asi la alimentacion de mas de 3.000 mil niños. ',
       impactLocation: 'Bogotá',
       sustainableDevelopmentGoals: ['ODS 2', 'ODS 3', 'ODS 10', 'ODS 17'],
+      gitUrl: 'https://github.com/programateacademy/1-Fundacion-Social-Crecer-Back-end',
+      gitUrl2: 'https://github.com/programateacademy/1-Fundacion-Social-Crecer-Front-end',
       image: [ ODSCOLOR2, ODSCOLOR3, ODSCOLOR10, ODSCOLOR17],
     },
     {
@@ -39,6 +42,9 @@ export const projectData = [
         summary: 'Generamos una base de datos  dinamica digital de todo el talento de la Fundación con el fin de poder contar con un almacenamiento de todo las personas vinculadas laboralmente a la Fundación y poder autromatizar procesos como crear certificaciones laborales apoyando que esta automatizacion facilite el trabajo de la fundación y puedan dedicar tiempo al crecimiento de proyectos enfocados a la sociedad. ',
         impactLocation: 'Bogotá',
         sustainableDevelopmentGoals: ['ODS 2', 'ODS 10', 'ODS 17'],
+        gitUrl: 'https://github.com/ElPardo16/proyecto-final-fsc-backend',
+        gitUrl2: 'https://github.com/ElPardo16/proyecto-final-fsc-frontend',
+        liveUrl: 'https://proyecto-final-fsc-frontend.vercel.app/',
         image: [ ODSCOLOR2, ODSCOLOR10, ODSCOLOR17],
       },
       {
@@ -47,6 +53,8 @@ export const projectData = [
         summary: 'Como objetivo específico del proyecto que se relaciona con el enfoque digital es "Desarrollar acciones comunicativas, tecnológicas y de integración comunitaria para la promoción de hábitos de vida saludable, nutrición integral y seguridad alimentaria"; es por esta vía que estamos direccionando los desarrollos web y digitales del proyecto. Ahora bien, para el tema de su relacionamiento con la estrategia empresaria, buscamos que estas acciones comunicativas y de injerencia comunitaria sirvan buscar aliados, recursos, patrocinadores e iniciativas similares que ayuden a darle sostenibilidad a esta propuesta aplicada en la comuna 3 de Medellín. ',
         impactLocation: 'Antioquia',
         sustainableDevelopmentGoals: ['ODS 2', 'ODS 3', 'ODS 4', 'ODS 10', 'ODS 17'],
+        gitUrl: 'https://github.com/programateacademy/6-Corporaci-n-Semilla-de-Esperanzas-Back-end.git',
+        gitUrl2: 'https://github.com/programateacademy/6-Corporaci-n-Semilla-de-Esperanzas-Front-end.git',
         image: [ ODSCOLOR2, ODSCOLOR3, ODSCOLOR4, ODSCOLOR10, ODSCOLOR17],
       },
       {
@@ -63,6 +71,7 @@ export const projectData = [
         summary: ' Creacion de plataforma para el seguimiento de proeyctos ya que Corpohypatia es una ong defensora de derechos humanos y trabaja por la igualdad social y de género con enfoque diferencial. Prioriza sus intervenciones en niños, niñas, adolescentes y mujeres. ',
         impactLocation: 'Santander',
         sustainableDevelopmentGoals: ['ODS 1', 'ODS 3', 'ODS 4', 'ODS 5', 'ODS 8','ODS 10', 'ODS 17'],
+        liveUrl: 'https://corpohypatia.vercel.app',
         image: [ ODSCOLOR1, ODSCOLOR3, ODSCOLOR4, ODSCOLOR5, ODSCOLOR8, ODSCOLOR10, ODSCOLOR17],
       },
       {
@@ -78,6 +87,9 @@ export const projectData = [
         summary: 'Desarrollamos una plataforma comunicativa e informativa ya que se Buscaba ser un canal de comunicación de la organización, sus acciones, las alianzas que se tienen, el seguimiento estratégico que se le realiza a las actividades en general sobre ODS en Colombia y sobre las cuales nuestros proyectos tienen impacto y adicionalmente ser un canal para la financiación de la organización. .',
         impactLocation: 'Bogotá',
         sustainableDevelopmentGoals: ['ODS 1', 'ODS 4', 'ODS 8', 'ODS 10', 'ODS 17'],
+        gitUrl: 'https://github.com/programateacademy/red-jods-aliados-backend.git',
+        gitUrl2: 'https://github.com/programateacademy/red-jods-proyectos-frontend',
+        liveUrl: 'https://redjods-proyectos.vercel.app',
         image: [ ODSCOLOR1, ODSCOLOR4, ODSCOLOR8, ODSCOLOR10, ODSCOLOR17],
       },
       {
@@ -86,6 +98,9 @@ export const projectData = [
         summary: 'Creación de una plataforma digital que ofrezca la presentación de pruebas de tamizaje a personas de todas las edades en las areas de Psicología y Terapia Ocupacional(TO). ',
         impactLocation: 'Bogotá',
         sustainableDevelopmentGoals: ['ODS 3', 'ODS 4', 'ODS 10', 'ODS 17'],
+        gitUrl: 'https://github.com/programateacademy/cire-Back-end',
+        gitUrl2: 'https://github.com/programateacademy/cire-fontend',
+        liveUrl: 'https://heroic-phoenix-4b4500.netlify.app',
         image: [ ODSCOLOR3, ODSCOLOR4, ODSCOLOR10, ODSCOLOR17],
       },
       {
@@ -134,6 +149,8 @@ export const projectData = [
         summary: 'Nuestras estrategia es ser un referente frente a la inclusion laboral y tenemos un modelo territorial de inclusion laboral que deseamos que todas la empresas conozcan.',
         impactLocation: 'Bogotá',
         sustainableDevelopmentGoals: ['ODS 1', 'ODS 5', 'ODS 8', 'ODS 10', 'ODS 17'],
+        gitUrl: 'https://github.com/programateacademy/c9-pacto-backend',
+        gitUrl2: 'https://github.com/programateacademy/c9-pacto-front',
         image: [ ODSCOLOR1, ODSCOLOR5, ODSCOLOR8, ODSCOLOR10, ODSCOLOR17],
       },
       {
@@ -141,11 +158,26 @@ export const projectData = [
         name: 'Tejer ideas',
         impactLocation: 'Colombia',
         sustainableDevelopmentGoals: ['ODS 1', 'ODS 4', 'ODS 5', 'ODS 8', 'ODS 9', 'ODS 10', 'ODS 17'],
+        gitUrl2: 'https://github.com/programateacademy/tejer-ideas-front/tree/carlos',
         image: [ ODSCOLOR1, ODSCOLOR4, ODSCOLOR5, ODSCOLOR8, ODSCOLOR9, ODSCOLOR10, ODSCOLOR17],
       },
       {
-        id: 17,
+        id: 18,
         name: 'El olivo',
+        liveUrl: 'https://ied-olivojuanxiii-libreria-virtual.netlify.app',
+        impactLocation: 'Santa Marta',
+      },
+      {
+        id: 19,
+        name: 'CONASTEM',
+        gitUrl2: 'https://github.com/programateacademy/genero-front',
+        impactLocation: 'Santa Marta',
+      },
+      {
+        id: 20,
+        name: 'CONASTEM',
+        gitUrl2: 'https://github.com/programateacademy/genero-front',
+        liveUrl: 'https://genero-front-six.vercel.app/',
         impactLocation: 'Santa Marta',
       },
   ];

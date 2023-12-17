@@ -74,8 +74,6 @@ p {
 }
 
 .project-count {
-  background: linear-gradient(180deg, rgba(253, 195, 0, 0.6), transparent);
-  border-radius: 10px;
   width: 150px;
   height: 100px;
   font-family: 'Gilroy ExtraBold';
@@ -90,7 +88,6 @@ p {
 }
 .disabled-card:hover {
   opacity: 0.5;
-
 }
 
 @media (max-width: 768px) {
