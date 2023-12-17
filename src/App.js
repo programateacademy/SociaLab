@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Portfolio />} />
         <Route path="/ods/:id" element={<Ods />} />
       </Routes>    
     </Router>
