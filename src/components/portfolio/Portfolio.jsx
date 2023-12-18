@@ -136,5 +136,8 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+<<<<<<< HEAD
 
 /*Aqui haciendo merge*/ 
+=======
+>>>>>>> portafolio

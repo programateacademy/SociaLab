@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react'
 const Up = () => {
   return (
@@ -5,3 +6,5 @@ const Up = () => {
   )
 }
 export default Up
+=======
+>>>>>>> portafolio

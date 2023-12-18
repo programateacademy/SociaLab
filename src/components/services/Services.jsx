@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react'
 const Services = () => {
   return (
@@ -7,3 +8,5 @@ const Services = () => {
   )
 }
 export default Services
+=======
+>>>>>>> portafolio

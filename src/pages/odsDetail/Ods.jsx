@@ -2,8 +2,9 @@ import React from "react";
 import "./Ods.css";
 import { useParams } from "react-router-dom";
 import { projectData } from "../../data/data";
-import Navbar from "../../components/navbar/Navbar";
-import Footer from "../../components/footer/Footer";
+import { FaGit } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaGlobe } from "react-icons/fa";
 
 import ODSCOLOR1 from "../../assets/ODSCOLOR1.png";
 import ODSCOLOR2 from "../../assets/ODSCOLOR2.png";
@@ -31,22 +32,29 @@ const ODSDescriptions = {
   "ODS 5": { name: "igualdad de género", image: ODSCOLOR5 },
   "ODS 6": { name: "Agua limpia y saneamiento", image: ODSCOLOR6 },
   "ODS 7": { name: "Energia accequible y no contaminante", image: ODSCOLOR7 },
-  "ODS 8": { name: "Trabajo decente y crecimiento economico", image: ODSCOLOR8 },
-  "ODS 9": { name: "Industria, innovación e infraestructura", image: ODSCOLOR9 },
+  "ODS 8": {
+    name: "Trabajo decente y crecimiento economico",
+    image: ODSCOLOR8,
+  },
+  "ODS 9": {
+    name: "Industria, innovación e infraestructura",
+    image: ODSCOLOR9,
+  },
   "ODS 10": { name: "Reducción de las desigualdades", image: ODSCOLOR10 },
   "ODS 11": { name: "Ciudades y comunidades sostenibles", image: ODSCOLOR11 },
   "ODS 12": { name: "Producción y consumos responsables", image: ODSCOLOR12 },
   "ODS 13": { name: "Acción por el clima", image: ODSCOLOR13 },
   "ODS 14": { name: "Vida submarina", image: ODSCOLOR14 },
   "ODS 15": { name: "vida de ecosistemas terrestres", image: ODSCOLOR15 },
-  "ODS 16": { name: "paz, justicia e instituciones sólidas", image: ODSCOLOR16 },
+  "ODS 16": {
+    name: "paz, justicia e instituciones sólidas",
+    image: ODSCOLOR16,
+  },
   "ODS 17": { name: "Alianzas para lograr los objetivos", image: ODSCOLOR17 },
 };
 
 function Ods() {
   const { id } = useParams();
-
-  // Mapear el número de ID a su ODS correspondiente
   const odsGoals = {
     1: "ODS 1",
     2: "ODS 2",
@@ -79,6 +87,7 @@ function Ods() {
     return <div>Información del ODS no encontrada</div>;
   }
 
+  // Filtrar los proyectos que tienen el ODS correspondiente
   const filteredProjects = projectData.filter(
     (project) =>
       project.sustainableDevelopmentGoals &&
@@ -86,11 +95,9 @@ function Ods() {
   );
 
   return (
-    <>
-    <Navbar />
-    <div className="container">
+    <div className="containerr">
       <div className="ods">
-        <img  src={currentODS.image} alt={currentODS.name} />
+        <img src={currentODS.image} alt={currentODS.name} />
         <h1>{currentODS.name}</h1>
       </div>
       {filteredProjects.map((project) => (
@@ -99,23 +106,60 @@ function Ods() {
           <p>{project.summary}</p>
           <h3 className="impact">Impacto</h3>
           <p className="impacto">{project.impactLocation}</p>
-          <div className="image-container">
+          <div className="image-containerr">
             <h3>Colaboración con otras ODS</h3>
             <div className="icon-cards">
               <div className="icon-cards__content">
                 <div className="icon-cards__item">
-              {project.image.map((img, index) => (
-                <img key={index} src={img} alt={`Image ${index + 1}`} />
-              ))}
-            </div>
+                  {project.image.map((img, index) => (
+                    <img key={index} src={img} alt={`Image ${index + 1}`} />
+                  ))}
+                </div>
               </div>
             </div>
           </div>
+          {project.gitUrl && (
+            <button className="btnn">
+              <a
+                className="btna"
+                href={project.gitUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGit />
+                Backend
+              </a>
+            </button>
+          )}
+          {project.gitUrl2 && (
+            <button className="btnn">
+              <a
+                className="btna"
+                href={project.gitUrl2}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub />
+                Frontend
+              </a>
+            </button>
+          )}
+          {project.liveUrl && (
+            <button className="btnn">
+              <a
+                className="btna"
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGlobe />
+                Demo
+              </a>
+            </button>
+          )}
         </div>
       ))}
     </div>
-    <Footer />
-    </>
   );
 }
 
