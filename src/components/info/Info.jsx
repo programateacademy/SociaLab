@@ -1,23 +1,39 @@
+import React from "react";
 import info from "../../assets/img/info.png";
+import Home from "../../assets/img/Home.png";
+import Homme from "../../assets/img/Homme.png";
+import "./Info.css";
 
 const Info = () => {
   return (
-    <div className="grid">
-      <div className="info-container">
-        <h1>Bienvenido a Social Lab: Impulsando el Cambio a través de la Tecnología</h1>
-        <h2>OBJETIVO ESTRATEGICO</h2>
-        <p>
-          Nos enorgullece facilitar el acceso tecnológico a organizaciones sin fines de lucro y fundaciones.
-          Alineamos acciones con la estrategia empresarial, contribuyendo a la automatización, creación de páginas web y mejora de plataformas.
-          Nuestro propósito es apoyar iniciativas alineadas con los Objetivos de Desarrollo Sostenible (ODS).
-          Garantizamos que la tecnología sea accesible y efectiva para quienes trabajan incansablemente por mejorar el mundo.
-        </p>
+    <div id="info" className="info">
+      <div className="sobreNosotros">
+        <img className="home" src={Home} alt="imagen representativa de informacion"/>
+        <h1 className="nosotros">SOBRE NOSOTROS</h1>
       </div>
-      <div className="image-container">
-        <img  src={info} alt="imagen representativa de informacion"/>
+      <div className="grid">
+        <div className="info-container">
+          <p className="parrafo">
+            Bienvenido a Social Lab: Impulsando el Cambio a través de la
+            Tecnología
+          </p>
+          <h2 className="obj">OBJETIVO ESTRATEGICO</h2>
+          <p className="parrafo">
+            Nos enorgullece facilitar el acceso tecnológico a organizaciones sin
+            fines de lucro y fundaciones; contribuyendo a la automatización,
+            creación de páginas web y mejora de plataformas. Nuestro propósito
+            es apoyar iniciativas alineadas con los Objetivos de Desarrollo
+            Sostenible (ODS).
+          </p>
+        </div>
+        <div className="image-container">
+          <img className="info-image" src={info}  alt="imagen representativa de informacion"  />
+        </div>
+        <img className="homme" src={Homme}  alt="imagen representativa de informacion"/>
       </div>
     </div>
   );
 };
 
 export default Info;
+
