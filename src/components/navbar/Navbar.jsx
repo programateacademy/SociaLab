@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from "react";
 import LogoEdu from "../../assets/img/LogEducaMas.jpg";
 
@@ -34,5 +33,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-=======
->>>>>>> portafolio
