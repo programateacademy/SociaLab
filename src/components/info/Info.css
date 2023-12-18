@@ -1,13 +1,15 @@
+
 .info {
-  max-width: 1280px;
-  padding: 0 100px 0 100px;
+  max-width: 100%;
+  width: 1280px;
+  height: auto;
   margin: 0 auto 0;
   margin-bottom: 0px;
 }
 
 .sobreNosotros {
   position: relative;
-  display: flex;
+
   align-items: center;
 }
 
@@ -48,29 +50,13 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 20px;
-  text-align: left;
-  margin-left: 92px;
-  margin-right: 92px;
   margin-top: 80px;
-}
-
-.info-container { 
-  padding: 15px; 
-  display: flex; 
-  flex-direction: column; 
-  justify-content: center; 
-  align-items: center;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .image-container {
   padding: 15px; 
-  display: flex; 
-  flex-direction: column; 
-  justify-content: center; 
-  align-items: center;
-
 }
 
 .info-image {
@@ -79,13 +65,14 @@
 }
 
 .homme {
-  width: 100%;
-  height: auto;
-  margin-left: 125%;
   margin-top: 5%;
+  width: 30%;
+  height: auto;
+  left: 0;
+  transform: translateX(233%);
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 480px) {
   .info {
     padding: 0 50px 0 50px;
   }
@@ -94,7 +81,7 @@
     max-width: 100%;
     margin: 10px;
     padding: 10px;
-    text-align: left; /* Alinear a la izquierda */
+    text-align: left;
   }
 
   .grid {
@@ -104,10 +91,6 @@
   .info-image {
     width: 574px;
   }
-  .homme {
-    width: 50%;
-    height: auto;
-    margin-left: 50%;
-  }
 
 }
+
