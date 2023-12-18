@@ -1,34 +1,58 @@
 import React from "react";
-import LogoEdu from "../../assets/img/LogEducaMas.jpg";
+import Logo from "../../assets/img/Logo.png";
+import "./Navbar.css";
+import { FaBars } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <div className="Header">
-      <nav className="Botones" >
-        <ul>
+   <>
+       <div className="linea">
+          <header className="Header">
+      <nav className="Botones">
+      <input type="checkbox" id="check" />
+        <ul className="left">
           <li>
-            <a href="#Inicio" className="btn1">INICIO</a>
+            <a href="#/" className="btn">
+              INICIO
+            </a>
           </li>
           <li>
-            <a href="#info" className="btn2">SOBRE NOSOTROS</a>
+            <a href="#info" className="btn">
+              SOBRE NOSOTROS
+            </a>
           </li>
           <li>
-            <a href="#services" className="btn3">SERVICIOS</a>
-          </li>
-
-          <div className="Logo">
-            <img src={LogoEdu} />
-          </div>
-
-          <li>
-            <a href="#portfolio" className="btn4">PORTAFOLIO</a>
-          </li>
-          <li>
-            <a href="#form" className="btn3">FORMULARIO</a>
+            <a href="#services" className="btn">
+              SERVICIOS
+            </a>
           </li>
         </ul>
+          <img className="Logo" src={Logo} alt="Logo EducaMas" />
+
+        <ul className="right">
+          <li>
+            <a href="#portfolio" className="btn">
+              PORTAFOLIO
+            </a>
+          </li>
+          <li>
+            <a href="#form" className="btn1">
+              FORMULARIO
+            </a>
+          </li>
+
+        <label for="check" className="checkbtn">
+          <FaBars className="icono" />
+        </label>
+        </ul>
+
       </nav>
+    </header>
     </div>
+    <section></section>
+   </> 
+
+
   );
 };
 
