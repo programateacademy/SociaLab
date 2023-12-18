@@ -12,6 +12,10 @@ function Form() {
   };
 
   return (
+    <>
+    <div id='form'>Form</div>
+  
+
     <form onSubmit={handleSubmit}>
       <label>
         Nombre:
@@ -30,6 +34,7 @@ function Form() {
       <br />
       <button type="submit">Enviar</button>
     </form>
+    </>
   );
 }
 
