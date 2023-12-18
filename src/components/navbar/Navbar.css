@@ -1,160 +1,161 @@
-.linea{
-    background-color: black;
-    height: 150px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
+header {
+  background-color: black;
+  width: 1280px;
+  max-width: 100%;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
 
+header.abajo{
+  background: rgb(5,5,5,0.7);
+}
+
+header.abajo .Botones,
+header.abajo .btn, .btn1{
+  color: #fff;
 
 }
 
-.Header {
-    background-color: black;
-    padding: 10px;
-    max-width: 1280px;
-    height: 130px;
-    display: flex;
-    align-items: center;
-  }
+
+.Botones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-left: 100px ;
+  padding-right: 100px ;
+}
+
+
+
+.Logo {
+  width: 300px;
+  height: 100%;
+}
+
+
+.btn{
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.btn:Hover{
+  width: 85px;
+  height: 30px;
+  border: 1px solid #FDC300;
+  border-radius: 8px;
   
-  .Botones {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .left,
-  .right {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    margin-left: 100px;
-    margin-right: 100px;
-  }
-
-  .Logo {
-    width: 300px;
-    height: 100%;
-  }
-  
-
-  .btn{
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-  }
-
-  .btn:Hover{
-    width: 85px;
-    height: 30px;
-    border: 1px solid #FDC300;
-    border-radius: 8px;
-    
-  }
+}
 
 
-  .btn1{
-    background-color:#FDC300 ;
-    color: black;
-    padding: 10px;
-    text-decoration: none;
-    border-radius: 8px;
-    margin: 2px;
-  }
+.btn1{
+  background-color:#FDC300 ;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 8px;
+  margin: 2px;
+}
 
-  .btn1:Hover{
-    color: #fff;
-    border: 1px solid #fbff00;
+.btn1:Hover{
+  color: #fff;
+  border: 1px solid #fbff00;
 
-  }
-  
-  .Botones ul{
-    justify-content: center;
-  }
+}
 
-  .checkbtn{
-    font-size: 45px;
-    color: #ffffff;
-    line-height: 80px;
-    cursor: pointer;
-    display: none;
-  }
+.Botones ul{
+  justify-content: center;
+}
 
-  #check{
-    display:none ;
-  }
+.checkbtn{
+  font-size: 45px;
+  color: #ffffff;
+  line-height: 80px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display:none ;
+}
 
 /* Estilos para tablets */
 @media only screen and (max-width: 768px) {
-    .linea{
-        height: 300px;
-        z-index: -99;
-    }
-    .Header {
-      height: auto;
-      padding: 5px;
-      justify-content: center;
-    }
-  
-    .Logo {
-      width: 200px;
-    }
-  
-    .left,
-    .right {
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-  
-    .Botones {
-      flex-direction: column;
-      margin: 0;
-    }
-  
-    .btn,
-    .btn1 {
-      padding: 5px;
-    }
-  
-    .checkbtn {
-      display: block; /* Mostrar el botón de menú desplegable */
-    }
+  .linea{
+      height: 300px;
+      z-index: -99;
   }
-  
-  /* Estilos para celulares */
-  @media only screen and (max-width: 481px) {
+  .Header {
+    height: auto;
+    padding: 5px;
+    justify-content: center;
+  }
 
-    .linea{
-        display: none;
-    }
-    .Header {
-        left: -100%;
-    }
-  
-    .Logo {
-      width: 150px;
-      position: absolute;
-      margin-right: auto;
-    }
-  
-    .left,
-    .right {
-      margin-left: 10px;
-      margin-right: 10px;
+  .Logo {
+    width: 200px;
+  }
 
-    }
-  
-    .Botones {
-      flex-direction: column;
-      margin: 0;
-    }
-  
-  
-    .checkbtn {
-      display: block; /* Mostrar el botón de menú desplegable */
-    }
+  .left,
+  .right {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .Botones {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .btn,
+  .btn1 {
+    padding: 5px;
+  }
+
+  .checkbtn {
+    display: block; /* Mostrar el botón de menú desplegable */
+  }
+}
+
+/* Estilos para celulares */
+@media only screen and (max-width: 481px) {
+
+  .linea{
+      display: none;
+  }
+  .Header {
+      left: -100%;
+  }
+
+  .Logo {
+    width: 150px;
+    position: absolute;
+    margin-right: auto;
+  }
+
+  .left,
+  .right {
+    margin-left: 10px;
+    margin-right: 10px;
 
   }
 
+  .Botones {
+    flex-direction: column;
+    margin: 0;
+  }
 
+
+  .checkbtn {
+    display: block; /* Mostrar el botón de menú desplegable */
+  }
+
+}

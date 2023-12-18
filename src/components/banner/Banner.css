@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Gilroy ExtraBold';
+    src: url('../../assets/fonts/FONTSFREE-NET-GILROY-EXTRABOLD.TTF') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Gilroy Light';
+    src: url('../../assets/fonts/GILROY-LIGHT.TTF') format('truetype');
+  }
+
+.banner {
+    width: 1280px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 0;
+    margin-top: 130px;
+    position: relative;
+}
+
+.text1 {
+    position: absolute;
+    top: 50%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+
+.h1Banner {
+    font-family: 'Gilroy ExtraBold';
+    white-space: nowrap;
+}
+
+.table1 {
+    text-align: left;
+    color: rgb(255, 255, 255);
+    font-family: 'Gilroy Light';
+    font-size: 16px;
+    white-space: nowrap;
+    border-spacing: 15px 15px;
+}

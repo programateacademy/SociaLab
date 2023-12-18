@@ -1,4 +1,5 @@
 import React from "react";
+import Layout from "../../components/layout/Layout";
 import "./Ods.css";
 import { useParams } from "react-router-dom";
 import { projectData } from "../../data/data";
@@ -95,6 +96,7 @@ function Ods() {
   );
 
   return (
+    <Layout>
     <div className="containerr">
       <div className="ods">
         <img src={currentODS.image} alt={currentODS.name} />
@@ -160,6 +162,7 @@ function Ods() {
         </div>
       ))}
     </div>
+    </Layout>
   );
 }
 

@@ -41,10 +41,66 @@ import ODSCOLOR17 from "../../assets/ODSCOLOR17.png";
 
 
 const Portfolio = () => {
+  const [projectCount, setProjectCount] = useState({});
+  const [hoveredProjects, setHoveredProjects] = useState({});
+
+  const imagesWithHover = [
+    { image: ODS1, goal: "ODS 1", hoverImage: ODSCOLOR1},
+    { image: ODS2, goal: "ODS 2" , hoverImage: ODSCOLOR2},
+    { image: ODS3, goal: "ODS 3" , hoverImage: ODSCOLOR3},
+    { image: ODS4, goal: "ODS 4" , hoverImage: ODSCOLOR4},
+    { image: ODS5, goal: "ODS 5" , hoverImage: ODSCOLOR5},
+    { image: ODS6, goal: "ODS 6" , hoverImage: ODSCOLOR6},
+    { image: ODS7, goal: "ODS 7" , hoverImage: ODSCOLOR7},
+    { image: ODS8, goal: "ODS 8" , hoverImage: ODSCOLOR8},
+    { image: ODS9, goal: "ODS 9" , hoverImage: ODSCOLOR9},
+    { image: ODS10, goal: "ODS 10" , hoverImage: ODSCOLOR10},
+    { image: ODS11, goal: "ODS 11" , hoverImage: ODSCOLOR11},
+    { image: ODS12, goal: "ODS 12" , hoverImage: ODSCOLOR12},
+    { image: ODS13, goal: "ODS 13" , hoverImage: ODSCOLOR13},
+    { image: ODS14, goal: "ODS 14" , hoverImage: ODSCOLOR14},
+    { image: ODS15, goal: "ODS 15" , hoverImage: ODSCOLOR15},
+    { image: ODS16, goal: "ODS 16" , hoverImage: ODSCOLOR16},
+    { image: ODS17, goal: "ODS 17" , hoverImage: ODSCOLOR17},
+  ];
+
+  useEffect(() => {
+    const countProjects = {};
+    imagesWithHover.forEach((item) => {
+      const filteredProjects = projectData.filter(
+        (project) =>
+          project.sustainableDevelopmentGoals &&
+          project.sustainableDevelopmentGoals.includes(item.goal)
+      );
+      countProjects[item.goal] = filteredProjects.length;
+    });
+    setProjectCount(countProjects);
+  }, []);
+
+  const handleHover = (odsGoal) => {
+    return ` ${projectCount[odsGoal] || 0}`;
+  };
+
+  const handleClick = (odsGoal) => {
+    console.log("Objetivo de Desarrollo Sostenible:", odsGoal);
+    const projectIds = projectsBySDG[odsGoal];
+    console.log("IDs de proyectos:", projectIds);
+    if (!projectIds || projectIds.length === 0) {
+      console.log("No hay proyectos asociados a este ODS");
+      return;
+    }
+    const filteredProjects = projectData.filter(
+      (project) =>
+        project.sustainableDevelopmentGoals &&
+        project.sustainableDevelopmentGoals.includes(odsGoal)
+    );
+    console.log("Proyectos filtrados:", filteredProjects);
+  };
+
   return (
     <div className="cont" id="portfolio">
-      <h1 className="title">PROYECTOS</h1>
-      <p className="description">Te invitamos a explorar nuestro portafolio completo, donde hemos recopilado cuidadosamente el contenido que creemos será de tu interés. Descubre la variedad y calidad de nuestras propuestas a medida que navegas por las siguientes páginas.</p>
+      <h1 className="title">Proyectos</h1>
+      <p>Te invitamos a explorar nuestro portafolio completo, donde hemos recopilado cuidadosamente el contenido que creemos será de tu interés. Descubre la variedad y calidad de nuestras propuestas a medida que navegas por las siguientes páginas.</p>
       <div className="container">
         <div className="portfolio">
           {imagesWithHover.map((item, index) => (
@@ -80,10 +136,3 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
-
-<<<<<<< HEAD
-/*resolviendo merge*/
-=======
-
->>>>>>> portafolio
-/**/

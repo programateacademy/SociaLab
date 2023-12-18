@@ -12,31 +12,36 @@
   max-width: 100%;
   width: 1280px;
   height: auto;
-  margin: 0 auto 0;
+  margin: 100px auto 0;
   margin-bottom: 0px;
 }
 
-.sobreNosotros {
+.nosotros {
+  font-family: 'Gilroy ExtraBold';
   position: relative;
-
   align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  margin-top: 0px;
 }
 
-.home {
-  width: 28%;
-  height: auto;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
+
 
 .parrafo1 {
   font-family: 'Gilroy Light';
   font-size: 20px;
   text-align: center;
-}
-
-.obj {
-  font-family: 'Gilroy ExtraBold';
-  font-size: 25px;
-  margin: 40px 0 40px 0;
 }
 
 .parrafo2 {
@@ -45,25 +50,11 @@
   text-align: left;
 }
 
-.nosotros {
+.obj {
   font-family: 'Gilroy ExtraBold';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: rgb(0, 0, 0);
-  font-size: 40px;
+  font-size: 25px;
+  margin: 40px 0 40px 0;
 }
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin-top: 80px;
-  padding-left: 100px;
-  padding-right: 100px;
-}
-
 .image-container {
   padding: 15px; 
 }

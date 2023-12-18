@@ -14,15 +14,15 @@
   align-items: center;
   justify-content: center;
   text-align: left;
-  width: 1280px;
-  max-width: 100%;
+  max-width: 1280px;
+  padding: 0 100px 0 100px;
   margin: 0 auto 0;
   margin-bottom: 154px;
 }
 
 h1, h2 {
   font-family: 'Gilroy ExtraBold';
-  font-size: 40px;
+  font-size: 32px;
   margin-bottom: 70px;
 }
 
@@ -36,10 +36,9 @@ h3 {
   margin-bottom: 70px;
 }
 
-.description {
+p {
   font-family: 'Gilroy Light';
   font-size: 20px;
-  padding: 0 100px 0 100px;
 }
 
 .portfolio,
