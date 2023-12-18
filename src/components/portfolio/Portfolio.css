@@ -14,8 +14,8 @@
   align-items: center;
   justify-content: center;
   text-align: left;
-  max-width: 1280px;
-  padding: 0 100px 0 100px;
+  width: 1280px;
+  max-width: 100%;
   margin: 0 auto 0;
   margin-bottom: 154px;
 }
@@ -39,8 +39,7 @@ h3 {
 .description {
   font-family: 'Gilroy Light';
   font-size: 20px;
-  margin-left:176px;
-  margin-right: 176px;;
+  padding: 0 100px 0 100px;
 }
 
 .portfolio,
