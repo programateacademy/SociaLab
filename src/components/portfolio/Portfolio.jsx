@@ -81,5 +81,9 @@ const Portfolio = () => {
 
 export default Portfolio;
 
+<<<<<<< HEAD
 /*resolviendo merge*/
+=======
+
+>>>>>>> portafolio
 /**/
