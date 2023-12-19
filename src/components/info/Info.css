@@ -160,7 +160,7 @@
   }
 }
 
-@media screen and (max-width: 480px) and (min-width: 320px) {
+@media screen and (max-width: 480px) and (min-width: 319px) {
   .info, .obj, .nosotros {
     max-width: 100%;
     margin: 10px;
@@ -178,11 +178,11 @@
 
   .homme {
     width: 70%;
-    transform: translateX(40%);
+    transform: translateX(42%);
   }
 }
 
-@media screen and (max-width: 320px) and (min-width: 220px) {
+@media screen and (max-width: 320px) and (min-width: 224px) {
   .info, .obj, .nosotros {
     max-width: 100%;
     margin: 10px;
@@ -199,12 +199,12 @@
   }
 
   .homme {
-    width: 100%;
-    transform: translateX(0);
+    width: 150%;
+    transform: translateX(25%);
   }
 }
 
-@media screen and (max-width: 230px) {
+@media screen and (max-width: 220px) {
   .info, .obj, .nosotros {
     max-width: 100%;
     margin: 10px;
@@ -222,6 +222,6 @@
 
   .homme {
     width: 200%;
-    transform: translateX(70%);
+    transform: translateX(5%);
   }
 }
