@@ -47,10 +47,14 @@
 
 .image-container {
   padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
 }
 
 .info-image {
-  width: 100%;
+  max-width: 574px;
   height: auto;
 }
 
