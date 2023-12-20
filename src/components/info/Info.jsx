@@ -1,6 +1,5 @@
 import React from "react";
 import info from "../../assets/img/info.png";
-import Home from "../../assets/img/Home.png";
 import Homme from "../../assets/img/Homme.png";
 import "./Info.css";
 
@@ -9,11 +8,6 @@ const Info = () => {
     <>
       <div id="info" className="info">
         <div className="sobreNosotros">
-          <img
-            className="home"
-            src={Home}
-            alt="imagen representativa de informacion"
-          />
           <h1 className="nosotros">SOBRE NOSOTROS</h1>
         </div>
         <div className="grid">
@@ -40,10 +34,10 @@ const Info = () => {
           </div>
         </div>
         <img
-            className="homme"
-            src={Homme}
-            alt="imagen representativa de informacion"
-          />
+          className="homme"
+          src={Homme}
+          alt="imagen representativa de informacion"
+        />
       </div>
     </>
   );
