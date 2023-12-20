@@ -63,8 +63,9 @@
   width: 30%;
   height: auto;
   left: 0;
-  transform: translateX(220%);
+  top: 60%;
   position: absolute;
+  transform: translateX(233%)
 }
 
 /* Estilos adicionales para dispositivos más pequeños */
@@ -89,7 +90,11 @@
 
   .homme {
     width: 50%;
-    transform: translateX(100%);
+    height: auto;
+    left: 0;
+    top: 70%;
+    position: absolute;
+    transform: translateX(110%);
   }
 }
 
@@ -111,6 +116,10 @@
 
   .homme {
     width: 60%;
+    height: auto;
+    left: 0;
+    top: 70%;
+    position: absolute;
     transform: translateX(70%);
   }
 }
@@ -133,7 +142,7 @@
 
   .homme {
     width: 70%;
-    transform: translateX(53%);
+    transform: translateX(55%);
   }
 }
 
@@ -155,8 +164,11 @@
 
   .homme {
     width: 60%;
-    margin-top: -15%;
-    transform: translateX(60%);
+    height: auto;
+    left: 0;
+    top: 70%;
+    position: absolute;
+    transform: translateX(70%);
   }
 }
 
@@ -178,7 +190,11 @@
 
   .homme {
     width: 70%;
-    transform: translateX(40%);
+    height: auto;
+    left: 0;
+    top: 80%;
+    position: absolute;
+    transform: translateX(60%);
   }
 }
 
@@ -200,6 +216,10 @@
 
   .homme {
     width: 150%;
+    height: auto;
+    left: 0;
+    top: 90%;
+    position: absolute;
     transform: translateX(25%);
   }
 }
@@ -222,6 +242,10 @@
 
   .homme {
     width: 200%;
-    transform: translateX(1%);
+    height: auto;
+    left: 0;
+    top: 90%;
+    position: absolute;
+    transform: translateX(55%);
   }
 }
