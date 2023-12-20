@@ -93,7 +93,7 @@
   }
 }
 
-@media screen and (max-width: 766px) and (min-width: 678px) {
+@media screen and (max-width: 766px) and (min-width: 630px) {
   .info, .obj, .nosotros {
     max-width: 100%;
     margin: 10px;
@@ -115,7 +115,7 @@
   }
 }
 
-@media screen and (max-width: 650px) and (min-width: 590px) {
+@media screen and (max-width: 640px) and (min-width: 590px) {
   .info, .obj, .nosotros {
     max-width: 100%;
     margin: 10px;
@@ -178,7 +178,7 @@
 
   .homme {
     width: 70%;
-    transform: translateX(42%);
+    transform: translateX(40%);
   }
 }
 
@@ -204,7 +204,7 @@
   }
 }
 
-@media screen and (max-width: 220px) {
+@media screen and (max-width: 220px) and (min-width: 100px) {
   .info, .obj, .nosotros {
     max-width: 100%;
     margin: 10px;
@@ -222,6 +222,6 @@
 
   .homme {
     width: 200%;
-    transform: translateX(5%);
+    transform: translateX(1%);
   }
 }

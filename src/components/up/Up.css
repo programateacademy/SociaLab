@@ -15,12 +15,36 @@
 
 }
 
-@media screen and (max-width: 1280px) {
+/* Estilos adicionales para dispositivos más pequeños */
+@media screen and (max-width: 1004px) {
   .button{
     margin: 10px; /* Margen más pequeño para dispositivos más pequeños */
     padding: 10px; /* Ajustar el espaciado interno */
     right: 50%; /* Cambiado a 50% para centrar en dispositivos más pequeños */
     transform: translateX(50%); /* Aplicar la mitad del ancho para centrar */
+    padding: 10px 20px;
+  }
+
+}
+
+
+@media screen and (max-width: 766px) and (min-width: 630px) {
+  .button{
+    margin: 10px; 
+    padding: 10px; 
+    right: 50%; 
+    transform: translateX(50%); 
+    padding: 10px 20px;
+  }
+
+}
+
+@media screen and (max-width: 640px) and (min-width: 590px) {
+  .button{
+    margin: 10px; 
+    padding: 10px; 
+    right: 50%; 
+    transform: translateX(50%); 
     padding: 10px 20px;
   }
 
