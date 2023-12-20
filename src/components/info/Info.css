@@ -3,7 +3,6 @@
   max-width: 100%;
   height: auto;
   margin: 100px auto 0;
-  margin-bottom: 0px;
 }
 
 .nosotros {
@@ -60,12 +59,10 @@
 
 .homme {
   margin-top: 5%;
-  width: 70%;
+  width: 60%;
   height: auto;
-  left: 0;
-  top: 60%;
   position: relative;
-  transform: translateX(214%)
+  transform: translateX(252%)
 }
 
 /* Estilos adicionales para dispositivos más pequeños */
