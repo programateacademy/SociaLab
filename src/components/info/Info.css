@@ -119,8 +119,8 @@
     height: auto;
     left: 0;
     top: 70%;
-    position: absolute;
-    transform: translateX(70%);
+    position: relative;
+    transform: translateX(114%);
   }
 }
 
@@ -142,7 +142,7 @@
 
   .homme {
     width: 70%;
-    transform: translateX(55%);
+    transform: translateX(100%);
   }
 }
 
@@ -163,12 +163,12 @@
   }
 
   .homme {
-    width: 60%;
+    width: 50%;
     height: auto;
     left: 0;
     top: 70%;
-    position: absolute;
-    transform: translateX(70%);
+    position: relative;
+    transform: translateX(180%);
   }
 }
 
@@ -193,8 +193,8 @@
     height: auto;
     left: 0;
     top: 80%;
-    position: absolute;
-    transform: translateX(60%);
+    position: relative;
+    transform: translateX(130%);
   }
 }
 
@@ -208,6 +208,7 @@
   .grid {
     grid-template-columns: 1fr;
     margin: 10px;
+    max-width: 100%;
   }
 
   .info-image {
@@ -219,7 +220,7 @@
     height: auto;
     left: 0;
     top: 90%;
-    position: absolute;
+    position: relative;
     transform: translateX(25%);
   }
 }
@@ -234,6 +235,7 @@
   .grid {
     grid-template-columns: 1fr;
     margin: 10px;
+    max-width: 100%;
   }
 
   .info-image {
@@ -241,11 +243,11 @@
   }
 
   .homme {
-    width: 200%;
+    width:70%;
     height: auto;
     left: 0;
     top: 90%;
-    position: absolute;
+    position: relative;
     transform: translateX(55%);
   }
 }
