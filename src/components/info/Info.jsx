@@ -30,12 +30,12 @@ const Info = () => {
               alt="imagen representativa de informacion"
             />
           </div>
-        </div>
-        <img
+          <img
           className="homme"
           src={Homme}
           alt="imagen representativa de informacion"
         />
+        </div>
       </div>
     </>
   );
