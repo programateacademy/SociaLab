@@ -39,29 +39,28 @@ import ODSCOLOR15 from "../../assets/ODSCOLOR15.png";
 import ODSCOLOR16 from "../../assets/ODSCOLOR16.png";
 import ODSCOLOR17 from "../../assets/ODSCOLOR17.png";
 
-
 const Portfolio = () => {
   const [projectCount, setProjectCount] = useState({});
   const [hoveredProjects, setHoveredProjects] = useState({});
 
   const imagesWithHover = [
-    { image: ODS1, goal: "ODS 1", hoverImage: ODSCOLOR1},
-    { image: ODS2, goal: "ODS 2" , hoverImage: ODSCOLOR2},
-    { image: ODS3, goal: "ODS 3" , hoverImage: ODSCOLOR3},
-    { image: ODS4, goal: "ODS 4" , hoverImage: ODSCOLOR4},
-    { image: ODS5, goal: "ODS 5" , hoverImage: ODSCOLOR5},
-    { image: ODS6, goal: "ODS 6" , hoverImage: ODSCOLOR6},
-    { image: ODS7, goal: "ODS 7" , hoverImage: ODSCOLOR7},
-    { image: ODS8, goal: "ODS 8" , hoverImage: ODSCOLOR8},
-    { image: ODS9, goal: "ODS 9" , hoverImage: ODSCOLOR9},
-    { image: ODS10, goal: "ODS 10" , hoverImage: ODSCOLOR10},
-    { image: ODS11, goal: "ODS 11" , hoverImage: ODSCOLOR11},
-    { image: ODS12, goal: "ODS 12" , hoverImage: ODSCOLOR12},
-    { image: ODS13, goal: "ODS 13" , hoverImage: ODSCOLOR13},
-    { image: ODS14, goal: "ODS 14" , hoverImage: ODSCOLOR14},
-    { image: ODS15, goal: "ODS 15" , hoverImage: ODSCOLOR15},
-    { image: ODS16, goal: "ODS 16" , hoverImage: ODSCOLOR16},
-    { image: ODS17, goal: "ODS 17" , hoverImage: ODSCOLOR17},
+    { image: ODS1, goal: "ODS 1", hoverImage: ODSCOLOR1 },
+    { image: ODS2, goal: "ODS 2", hoverImage: ODSCOLOR2 },
+    { image: ODS3, goal: "ODS 3", hoverImage: ODSCOLOR3 },
+    { image: ODS4, goal: "ODS 4", hoverImage: ODSCOLOR4 },
+    { image: ODS5, goal: "ODS 5", hoverImage: ODSCOLOR5 },
+    { image: ODS6, goal: "ODS 6", hoverImage: ODSCOLOR6 },
+    { image: ODS7, goal: "ODS 7", hoverImage: ODSCOLOR7 },
+    { image: ODS8, goal: "ODS 8", hoverImage: ODSCOLOR8 },
+    { image: ODS9, goal: "ODS 9", hoverImage: ODSCOLOR9 },
+    { image: ODS10, goal: "ODS 10", hoverImage: ODSCOLOR10 },
+    { image: ODS11, goal: "ODS 11", hoverImage: ODSCOLOR11 },
+    { image: ODS12, goal: "ODS 12", hoverImage: ODSCOLOR12 },
+    { image: ODS13, goal: "ODS 13", hoverImage: ODSCOLOR13 },
+    { image: ODS14, goal: "ODS 14", hoverImage: ODSCOLOR14 },
+    { image: ODS15, goal: "ODS 15", hoverImage: ODSCOLOR15 },
+    { image: ODS16, goal: "ODS 16", hoverImage: ODSCOLOR16 },
+    { image: ODS17, goal: "ODS 17", hoverImage: ODSCOLOR17 },
   ];
 
   useEffect(() => {
@@ -100,36 +99,47 @@ const Portfolio = () => {
   return (
     <div className="cont" id="portfolio">
       <h1 className="title">Proyectos</h1>
-      <p>Te invitamos a explorar nuestro portafolio completo, donde hemos recopilado cuidadosamente el contenido que creemos será de tu interés. Descubre la variedad y calidad de nuestras propuestas a medida que navegas por las siguientes páginas.</p>
-      <div className="container">
-        <div className="portfolio">
-          {imagesWithHover.map((item, index) => (
-            <div key={index} className="portfolio">
-              <Link to={projectCount[item.goal] !== 0 ? `/ods/${index + 1}` : "#"}>
-                <div
-                  className={`ods-card ${
-                    projectCount[item.goal] === 0 ? "disabled-card" : ""
-                  }`}
-                  onMouseEnter={() => setHoveredProjects(item.hoverImage)}
-                  onMouseLeave={() => setHoveredProjects(null)}
-                  onClick={() => projectCount[item.goal] !== 0 && handleClick(item.goal)}
-                >
-                  <img
-                    className="ods-card"
-                    src={hoveredProjects === item.hoverImage ? item.hoverImage : item.image}
-                    alt={`Imagen ${index + 1}`}
-                  />
-                  {hoveredProjects === item.hoverImage && (
-                    <div className="project-count">
+      <p className="descriptionp">
+        Te invitamos a explorar nuestro portafolio completo, donde hemos
+        recopilado cuidadosamente el contenido que creemos será de tu interés.
+        Descubre la variedad y calidad de nuestras propuestas a medida que
+        navegas por las siguientes páginas.
+      </p>
+      <div className="portfolio">
+        {imagesWithHover.map((item, index) => (
+          <div key={index} className="portfolio">
+            <a
+              href={projectCount[item.goal] !== 0 ? `/ods/${index + 1}` : "#"}
+            >
+              <div
+                className={`ods-card ${
+                  projectCount[item.goal] === 0 ? "disabled-card" : ""
+                }`}
+                onMouseEnter={() => setHoveredProjects(item.hoverImage)}
+                onMouseLeave={() => setHoveredProjects(null)}
+                onClick={() =>
+                  projectCount[item.goal] !== 0 && handleClick(item.goal)
+                }
+              >
+                <img
+                  className="ods-card"
+                  src={
+                    hoveredProjects === item.hoverImage
+                      ? item.hoverImage
+                      : item.image
+                  }
+                  alt={`Imagen ${index + 1}`}
+                />
+                {hoveredProjects === item.hoverImage && (
+                  <div className="project-count">
                     <span>Proyectos</span>
                     {handleHover(item.goal)}
                   </div>
-                  )}
-                </div>
-              </Link>
-            </div>
-          ))}
-        </div>
+                )}
+              </div>
+            </a>
+          </div>
+        ))}
       </div>
     </div>
   );

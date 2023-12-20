@@ -1,5 +1,5 @@
 import React, {useEffect}from "react";
-import Logo from "../../assets/img/Logo.png";
+import Logo from "../../assets/img/Logo.svg";
 import "./Navbar.css";
 import { FaBars } from "react-icons/fa";
 
@@ -30,12 +30,12 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a href="#info" className="btn">
+                <a href="/#info" className="btn">
                   SOBRE NOSOTROS
                 </a>
               </li>
               <li>
-                <a href="#services" className="btn">
+                <a href="/#services" className="btn">
                   SERVICIOS
                 </a>
               </li>
@@ -44,12 +44,12 @@ const Navbar = () => {
 
             <ul className="right">
               <li>
-                <a href="#portfolio" className="btn">
+                <a href="/#portfolio" className="btn">
                   PORTAFOLIO
                 </a>
               </li>
               <li>
-                <a href="#form" className="btn1">
+                <a href="/#form" className="btn1">
                   FORMULARIO
                 </a>
               </li>
