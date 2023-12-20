@@ -1,8 +1,13 @@
 import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './Form.css';
+import lineForm from '../../assets/img/imgForm/lineFormBetween.svg'
 
 const Form = () => {
+
+  /*const [input, setInput] = useState()
+  const [full, setfull] = useState()*/
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -16,21 +21,27 @@ const Form = () => {
       });
   };
 
+  /*nput(true){
+    console.log("borrar input")
+  }*/
   const sended = () => {
     alert('Formulario enviado')
   }
 
   return (
-    <div className='container' id='form'>
-      <div>
-        <h2 className='tituloForm'>Construyendo un futuro sostenible con tecnología accesible</h2>
-        <p className='parrafoForm'>Forma parte del movimiento: Facilitamos tecnología para organizaciones sin fines de lucro y fundaciones. ¡Completa el formulario y únete a nuestra misión de transformar el acceso tecnológico!</p>
+    <div className='containerFatherForm' id='form'>
+      <div className='containerText'>
+        <h2 className='titleForm'>Construyendo un futuro sostenible con tecnología accesible</h2>
+        <p className='pForm'>Forma parte del movimiento: Facilitamos tecnología para organizaciones sin fines de lucro y fundaciones. ¡Completa el formulario y únete a nuestra misión de transformar el acceso tecnológico!</p>
       </div>
-      <form className='containerForm' ref={form} onSubmit={sendEmail} >
 
-        <input className='input' type="text" name="org_name" placeholder='Nombre  de la empresa / organización'/>
+      <div className='line'> <img src={lineForm} alt="."/></div>
 
-        <input className='input' type="text" name="org_project_approach" placeholder='Enfoque o proyecto actual de empresa u organización' />
+      <form className='containerForm' ref={form} onSubmit={sendEmail}>
+
+        <input className='input' type="text" name="org_name" placeholder='Nombre de la empresa / organización'/>
+
+        <input className='input' type="text" name="org_project_approach" placeholder='Enfoque o proyecto actual de la organización' />
         
         <input className='input' type="text" name="user_name" placeholder='Nombre del responsable del proyecto'/>
 
@@ -56,7 +67,7 @@ const Form = () => {
 
         <textarea className='textarea' name="message" placeholder='Cuentanos del proyecto y lo que requiere.' />
 
-        <button className='button' type="submit" value="Send" onClick={sended}> Enviar </button> 
+        <button className='button' type="submit" value="Send"> Enviar </button> 
       </form>
     </div>
   );
