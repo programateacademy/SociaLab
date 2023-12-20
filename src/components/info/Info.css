@@ -2,7 +2,7 @@
   width: 1920px;
   max-width: 100%;
   height: auto;
-  margin: 100px auto 0;
+  margin: 0 auto 0;
   margin-bottom: 0px;
 }
 
@@ -13,12 +13,13 @@
   color: rgb(0, 0, 0);
   font-size: 40px;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-top: 50px;
+  margin-top: 200px;
   padding-left: 100px;
   padding-right: 100px;
 }
@@ -63,8 +64,8 @@
   width: 30%;
   height: auto;
   left: 0;
-  transform: translateX(220%);
-  position: absolute;
+  transform: translateX(234%);
+  position: relative;
 }
 
 /* Estilos adicionales para dispositivos más pequeños */

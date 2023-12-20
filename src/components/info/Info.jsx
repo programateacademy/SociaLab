@@ -7,9 +7,7 @@ const Info = () => {
   return (
     <>
       <div id="info" className="info">
-        <div className="sobreNosotros">
           <h1 className="nosotros">SOBRE NOSOTROS</h1>
-        </div>
         <div className="grid">
           <div className="info-container">
             <p className="parrafo1">
