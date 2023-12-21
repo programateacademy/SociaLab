@@ -1,0 +1,164 @@
+@font-face {
+  font-family: "Gilory ExtraBold";
+  src: url("../../assets/fonts/GILROY-EXTRABOLD.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "Gilroy Light";
+  src: url("../../assets/fonts/GILROY-LIGHT.TTF") format("truetype");
+}
+
+.Bannerr {
+  position: relative;
+  width: 1920px;
+  top: 40px;
+  max-width:100% ;
+  margin: 0 auto 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 130px;
+  height: auto;
+}
+
+.ImgBannerr {
+  width: 100%;
+  height: auto;
+  margin-top: -40px;
+}
+
+.Contenido {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.titulo {
+  font-family: "Gilroy ExtraBold";
+  font-size: 60px;
+  white-space: nowrap;
+  margin-top: 250px 0 0 50px;
+}
+
+.subtitulo {
+  font-family: "Gilroy Light";
+  font-size: 25px;
+  margin-left: 880px;
+  white-space: nowrap;
+  width: 48%; /* Establece el ancho para que los elementos se distribuyan en dos columnas */
+  margin-bottom: 10px -10px; /* Espacio entre las frases */
+}
+
+/* Estilos para celulares */
+@media screen and (max-width: 320px) {
+  .Bannerr {
+    width: 100%;
+    height: auto;
+    top: 40px;
+  }
+
+  .ImgBannerr {
+    width: 100%;
+    height: auto;
+    top: 40px;
+  }
+}
+
+/* Estilos para celulares */
+@media screen and (max-width: 480px) {
+  .Bannerr {
+    width: 100%;
+    height: auto;
+    top: 40px;
+  }
+
+  .ImgBannerr {
+    margin-top: -40px;
+    width: 100%;
+    height: auto;
+  }
+
+  .Contenido {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    top: 160px;
+    margin-left: 200px;
+  }
+
+  .titulo {
+    font-size: 20px;
+  }
+
+  .subtitulo {
+    font-size: 15px;
+
+  }
+}
+
+/* Estilos para tablets */
+@media screen and (max-width: 768px) {
+  .Bannerr {
+    width: 100%;
+    height: auto;
+    top: 40px;
+  }
+
+  .ImgBannerr {
+    margin-top: -40px;
+    width: 100%;
+    height: auto;
+  }
+
+  .Contenido {
+    top: 160px; /* Modifica la posición del contenido para tabletas */
+    margin-left: 200px; /* Ajuste del margen izquierdo */
+  }
+
+  .titulo {
+    font-size: 23px; /* Tamaño de fuente para tabletas */
+    margin: 15px 10px; /* Margen para tabletas */
+  }
+
+  .subtitulo {
+    font-size: 15px; /* Tamaño de fuente para tabletas */
+    margin: 15px -10px; /* Margen para tabletas */
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+  .Bannerr {
+    width: 100%;
+    height: auto;
+    top: 40px;
+
+  }
+  
+  .ImgBannerr {
+    margin-top: -40px;
+    width: 100%;
+    height: auto;
+  }
+
+
+
+  .titulo {
+    font-size: 23px;
+    margin: 15px 10px; 
+  }
+
+  .subtitulo {
+    font-size: 15px;
+    margin: 15px -10px;
+  }
+
+}

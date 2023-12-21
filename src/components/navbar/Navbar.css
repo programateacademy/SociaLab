@@ -1,27 +1,42 @@
-.linea{
-    background-color: black;
-    height: 150px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-
-
+@font-face {
+  font-family: 'Gilory ExtraBold';
+  src: url('../../assets/fonts/GILROY-EXTRABOLD.TTF')format('truetype');
 }
 
 .Header {
-    background-color: black;
-    padding: 10px;
-    max-width: 1280px;
-    height: 130px;
-    display: flex;
-    align-items: center;
+  background-color: black;
+  width: 1920px;
+  max-width: 100%;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
   }
+
+  header.abajo{
+    background: rgb(5,5,5,0.7);
+
+  }
+
+  header.abajo .Botones,
+  header.abajo .btn, .btn1{
+    color: #fff;
+
+  }
+
   
   .Botones {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    white-space: nowrap;
   }
   
   .left,
@@ -29,20 +44,22 @@
     list-style: none;
     padding: 0;
     display: flex;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 130px;
+    margin-right: 130px;
   }
 
   .Logo {
-    width: 300px;
-    height: 100%;
+    width: 100%;
+    height: auto;
   }
   
 
   .btn{
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
-    padding: 10px;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Gilory ExtraBold';
   }
 
   .btn:Hover{
@@ -50,17 +67,18 @@
     height: 30px;
     border: 1px solid #FDC300;
     border-radius: 8px;
-    
   }
 
 
   .btn1{
     background-color:#FDC300 ;
     color: black;
-    padding: 10px;
+    padding: 20px;
     text-decoration: none;
+    font-size: 20px;
     border-radius: 8px;
     margin: 2px;
+    font-family: 'Gilory ExtraBold';
   }
 
   .btn1:Hover{
@@ -74,87 +92,204 @@
   }
 
   .checkbtn{
-    font-size: 45px;
+    font-size: 40px;
     color: #ffffff;
+    margin-right: 40px;
+    float:right;
     line-height: 80px;
     cursor: pointer;
     display: none;
+    cursor: pointer;
   }
 
   #check{
     display:none ;
   }
 
-/* Estilos para tablets */
-@media only screen and (max-width: 768px) {
-    .linea{
-        height: 300px;
-        z-index: -99;
-    }
-    .Header {
-      height: auto;
-      padding: 5px;
-      justify-content: center;
-    }
-  
-    .Logo {
-      width: 200px;
-    }
-  
-    .left,
-    .right {
-      margin-left: 20px;
-      margin-right: 20px;
-    }
-  
-    .Botones {
-      flex-direction: column;
-      margin: 0;
-    }
-  
-    .btn,
-    .btn1 {
-      padding: 5px;
-    }
-  
-    .checkbtn {
-      display: block; /* Mostrar el botón de menú desplegable */
-    }
-  }
-  
+
+   
   /* Estilos para celulares */
-  @media only screen and (max-width: 481px) {
+@media screen and (max-width: 320px) {
+  .Header {
+    width: 100%;
+  }
 
-    .linea{
-        display: none;
-    }
-    .Header {
-        left: -100%;
-    }
-  
-    .Logo {
-      width: 150px;
-      position: absolute;
-      margin-right: auto;
-    }
-  
-    .left,
-    .right {
-      margin-left: 10px;
-      margin-right: 10px;
+  .Logo{
+    width: 70%;
+  }
 
-    }
-  
-    .Botones {
-      flex-direction: column;
-      margin: 0;
-    }
-  
-  
-    .checkbtn {
-      display: block; /* Mostrar el botón de menú desplegable */
-    }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
 
+ 
+  /* Estilos para celulares */
+@media screen and (max-width: 480px) {
+  .Header {
+    width: 100%;
+  }
+
+  
+  .Logo{
+    width: 70%; /* Ajuste del tamaño para dispositivos móviles */
+    height: auto; /* Ajuste de altura proporcional */
+    margin-left: 20px; 
+  }
+
+  
+
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+    
+
+
+/* Estilos para tablets */
+@media screen and (max-width: 768px) {
+  .Header {
+    width: 100%;
+  }
+
+  .Logo{
+    margin-left: 5%;
+    width: 10px;
+    position: absolute;
+    top: 5px;
   }
 
 
+  .Botones .right{
+    margin-left: 0;
+    top: 430px;
+    max-width: 100%;
+    width: 230px;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: rgb(5,5,5,0.7);
+  }
+  .Botones .left{
+    margin-left: 0;
+    top: 130px;
+    max-width: 100%;
+    width: 200px;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background:  rgb(5,5,5,0.7);
+  }
+  
+  .left,
+  .right {
+    margin: 0px;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  } 
+
+  .btn,
+  .btn1{
+    margin-left: 5px;
+  }
+
+  .btn:Hover{
+    width: 160px;
+    border: 2px solid #FDC300;
+  }
+
+  .btn1:Hover{
+    color: #fff;
+    width: 160px;
+    border: 2px solid #fbff00;
+
+  }
+
+  
+  .checkbtn {
+    display: block; /* Mostrar el botón de menú desplegable */
+    font-size: 35px;
+    top: 10px;
+    color: #ffffff;
+    float:right;
+    line-height: 80px;
+    margin-left:auto;
+    cursor: pointer;
+  }
+
+  .Botones ul li{
+    display: block;
+    margin: 20px 0;
+    line-height: 30px;
+
+  }
+
+  .Botones ul li a{
+    font-size: 20px;
+    display: block;
+  }
+
+  
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .Header {
+    width: 100%;
+    }
+    .Botones {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      white-space: nowrap;
+    }
+    
+    .left,
+    .right {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  
+    .Logo {
+      width: 230px;
+      height: 100px;
+    }
+    
+  
+    .btn{
+      padding: 15px;
+      font-size: 15px;
+    }
+  
+    .btn:Hover{
+      width:100%;
+      border: 2px solid #FDC300;
+    }
+  
+  
+    .btn1{
+      padding: 15px;
+      font-size: 15px;
+    }
+  
+    .btn1:Hover{
+      color: #fff;
+      border: 2px solid #fbff00;
+  
+    }
+  
+}
