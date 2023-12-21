@@ -21,12 +21,15 @@ const Form = () => {
       });
   };
 
-  /*nput(true){
-    console.log("borrar input")
-  }*/
   const sended = () => {
     alert('Formulario enviado')
   }
+
+  /*const btnAbrirModal = document.getElementById('pop-upOpen')
+
+  btnAbrirModal.addEventListener("click",()=>{
+    ModuleGraph.showModal();
+  })*/
 
   return (
     <div className='containerFatherForm' id='form'>
@@ -57,17 +60,17 @@ const Form = () => {
 
         <select name="multiple2"className='select'>
           <option selected disabled >Tipo de desarrollo:</option>
-          <option className='option' value="Creación de sitio web corporativo con registro de usuarios con roles asignados">Creación de sitio web corporativo con registro de usuarios con roles asignados</option>
+          <option className='option' value="Creación de sitio web corporativo con registro de usuarios con roles asignados">Creación de sitio web corporativo con registro de usuarios</option>
           <option className='option' value="Creación de landing page para recolección de fondos">Creación de landing page para recolección de fondos</option>
-          <option className='option' value="Creación de un sistema intranet extranet (Intranet: Es una plataforma a la que únicamente pueden acceder los propios empleados de la compañía. Extranet: Cuando se puede acceder a ella a través de Internet por parte de usuarios externos.)">Creación de un sistema intranet extranet (Intranet: Es una plataforma a la que únicamente pueden acceder los propios empleados de la compañía. Extranet: Cuando se puede acceder a ella a través de Internet por parte de usuarios externos.)</option>
-          <option className='option' value="Crear una tienda online eCommerce (tienda online de productos o servicios)">Crear una tienda online eCommerce (tienda online de productos o servicios)</option>
+          <option className='option' value="Creación de un sistema intranet extranet (Intranet: Es una plataforma a la que únicamente pueden acceder los propios empleados de la compañía. Extranet: Cuando se puede acceder a ella a través de Internet por parte de usuarios externos.)">Creación de un sistema intranet extranet</option>
+          <option className='option' value="Crear una tienda online eCommerce (tienda online de productos o servicios)">Crear una tienda online eCommerce</option>
           <option className='option' value="Creacion de  web educativa">Creacion de  web educativa</option>
           <option className='option' value="Creacion de  sitio web para seguimiento de procesos">Creacion de  sitio web para seguimiento de procesos</option>
         </select>
 
         <textarea className='textarea' name="message" placeholder='Cuentanos del proyecto y lo que requiere.' />
 
-        <button className='button' type="submit" value="Send"> Enviar </button> 
+        <button className='button' type="submit" value="Send" onClick={sended}> Enviar </button> 
       </form>
     </div>
   );
