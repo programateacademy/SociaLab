@@ -13,6 +13,7 @@
   color: rgb(0, 0, 0);
   font-size: 40px;
   margin-top: 10px;
+  position: relative;
 }
 
 .grid {
@@ -58,22 +59,16 @@
   height: auto;
 }
 
-.homme {
-  margin-top: 5%;
-  width: 60%;
-  height: auto;
-  left: 0;
-  position: relative;
-  transform: translateX(266%);
-}
-
 /* Estilos adicionales para dispositivos más pequeños */
 @media screen and (max-width: 1280px) {
-  .info {
-    padding: 0 20px;
+  .info, .obj, .nosotros {
+    max-width: 100%;
+    margin: 10px;
+    padding: 10px;
   }
 
-  .nosotros {
+  .obj {
+    max-width: 100%;
     margin: 10px;
     padding: 10px;
   }
@@ -85,23 +80,12 @@
 
   .info-image {
     width: 100%;
-  }
-
-  .homme {
-    width: 50%;
-    height: auto;
-    top: 10%;
-    position: relative;
-    transform: translateX(133%);
   }
 }
 
 @media screen and (max-width: 1040px) {
-  .info {
-    padding: 0 20px;
-  }
-
-  .nosotros {
+  .info, .obj, .nosotros {
+    max-width: 100%;
     margin: 10px;
     padding: 10px;
   }
@@ -113,13 +97,6 @@
 
   .info-image {
     width: 100%;
-  }
-
-  .homme {
-    width: 50%;
-    height: auto;
-    position: relative;
-    transform: translateX(145%);
   }
 }
 
@@ -138,14 +115,6 @@
   .info-image {
     width: 100%;
   }
-
-  .homme {
-    width: 60%;
-    height: auto;
-    top: 70%;
-    position: relative;
-    transform: translateX(114%);
-  }
 }
 
 @media screen and (max-width: 640px) and (min-width: 590px) {
@@ -162,11 +131,6 @@
 
   .info-image {
     width: 100%;
-  }
-
-  .homme {
-    width: 70%;
-    transform: translateX(100%);
   }
 }
 
@@ -185,14 +149,6 @@
   .info-image {
     width: 100%;
   }
-
-  .homme {
-    width: 50%;
-    height: auto;
-    top: 90%;
-    position: relative;
-    transform: translateX(180%);
-  }
 }
 
 @media screen and (max-width: 480px) and (min-width: 319px) {
@@ -209,14 +165,6 @@
 
   .info-image {
     width: 100%;
-  }
-
-  .homme {
-    width: 70%;
-    height: auto;
-    top: 80%;
-    position: relative;
-    transform: translateX(140%);
   }
 }
 
@@ -236,14 +184,6 @@
   .info-image {
     width: 100%;
   }
-
-  .homme {
-    width: 150%;
-    height: auto;
-    top: 90%;
-    position: relative;
-    transform: translateX(25%);
-  }
 }
 
 @media screen and (max-width: 220px) and (min-width: 100px) {
@@ -256,18 +196,9 @@
   .grid {
     grid-template-columns: 1fr;
     margin: 10px;
-    max-width: 100%;
   }
 
   .info-image {
     width: 100%;
-  }
-
-  .homme {
-    width:70%;
-    height: auto;
-    top: 90%;
-    position: relative;
-    transform: translateX(55%);
   }
 }
