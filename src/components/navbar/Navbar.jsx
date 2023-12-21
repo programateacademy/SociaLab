@@ -1,5 +1,5 @@
-/*import React, {useEffect}from "react";
-import Logo from "../../assets/img/Logo.svg";
+import React, {useEffect}from "react";
+import Logo from "../../assets/img/Logo.png";
 import "./Navbar.css";
 import { FaBars } from "react-icons/fa";
 
@@ -23,6 +23,9 @@ const Navbar = () => {
         <header className="Header">
           <nav className="Botones">
             <input type="checkbox" id="check" />
+            <label for="check" className="checkbtn">
+                <FaBars className="icono" />
+              </label>
             <ul className="left">
               <li>
                 <a href="/" className="btn">
@@ -53,10 +56,6 @@ const Navbar = () => {
                   FORMULARIO
                 </a>
               </li>
-
-              <label for="check" className="checkbtn">
-                <FaBars className="icono" />
-              </label>
             </ul>
           </nav>
         </header>
@@ -67,4 +66,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;*/
+export default Navbar;
