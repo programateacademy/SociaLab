@@ -8,11 +8,15 @@
     src: url('../../assets/fonts/GILROY-LIGHT.TTF') format('truetype');
   }
 
+.formCenter{
+    width: 1920px;
+    max-width: 100%;
+    height: auto;
+    margin: 100px auto 0;
+}
 
 .containerFatherForm{
     display: grid;
-    max-width: 100%;
-    width: 1920px;
     grid-template-columns: repeat(3, 35%);
     padding: 50px;
     margin: 20px 100px;
@@ -31,6 +35,20 @@
     line-height: normal;
 }
 
+.pForm{
+    width: 350px;
+    height: 164px;
+    flex-shrink: 0;
+    align-self: stretch;
+    color: #000;
+    font-family: 'Gilroy Light';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: -20px;
+}
+
 .line{
     display: flex;
     grid-column: 2;
@@ -45,21 +63,8 @@
     grid-template-columns: repeat(1, 100%);
     width: 400px;
     padding: 60px;
-    margin: -45px 0 0 -250px;
+    margin: -35px 0 0 -160px;
     border-radius: 15px;
-}
-
-.pForm{
-    height: 164px;
-    flex-shrink: 0;
-    align-self: stretch;
-    color: #000;
-    font-family: 'Gilroy Light';
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-top: -100px;
 }
 
 .input {
@@ -165,7 +170,7 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {    
 
     .containerFatherForm{
         display: grid;
@@ -189,7 +194,8 @@
         font-size: 40px;
         font-style: normal;
         line-height: normal;
-        margin-bottom: 150px;
+        margin-top: 100px;
+        margin-bottom: -40px;
     }
     
     .pForm{
@@ -208,7 +214,7 @@
         display: flex;
         width: 1px;
         height: 368px;
-        margin: 20px 20px 0 20px;
+        margin: 80px -20px 0 20px;
         color: black;
     }    
     
@@ -217,7 +223,7 @@
         grid-column: 3;
         grid-template-columns: repeat(1, 100%);
         width: 200px;
-        margin: -100px -320px;
+        margin: -60px 0 0 -350px;
         border-radius: 15px;
     }
     
@@ -283,7 +289,7 @@
         position: absolute;
         justify-content: center;
         align-items: center;
-        margin: 535px auto auto 150px;
+        margin: 518px auto auto 150px;
         border-radius: 15px;
         border: 1px solid #000;
         background: rgba(253, 195, 0);
@@ -310,13 +316,14 @@
         transition: all 0.3s ease;
         background: rgba(253, 195, 0);
         color: #fff;
-        margin: 540px auto auto 145px;
+        margin: 523px auto auto 145px;
         cursor: pointer;
     }
     
 }
 
 @media screen and (max-width: 768px) {
+  
     .containerFatherForm{
         display: grid;
         max-width: 100%;
@@ -371,7 +378,7 @@
         width: 183px;
         height: 200px;
         color: black;
-        margin: 40px auto auto 350px;
+        margin: 40px auto auto 200px;
     }
 
     .containerForm{
@@ -442,7 +449,7 @@
         position: absolute;
         justify-content: center;
         align-items: center;
-        margin: 500px auto auto 180px;
+        margin: 500px auto auto 150px;
         border-radius: 15px;
         border: 1px solid #000;
         background: rgba(253, 195, 0);
@@ -469,13 +476,14 @@
         transition: all 0.3s ease;
         background: rgba(253, 195, 0);
         color: #fff;
-        margin: 505px auto auto 175px;
+        margin: 505px auto auto 145px;
         cursor: pointer;
     }
     
 }
 
 @media screen and (max-width: 480px) {
+
     .containerFatherForm{
         display: grid;
         max-width: 100%;
@@ -489,7 +497,7 @@
         grid-row: 1;
         grid-template-rows: repeat(2, 100%);
         justify-content: center;
-        margin-left: 270px;
+        margin-left: 310px;
     }  
     
     .titleForm{
@@ -530,7 +538,7 @@
         width: 183px;
         height: 200px;
         color: black;
-        margin: 50px auto auto 200px;
+        margin: 50px auto auto 225px;
     }
 
     .containerForm{
@@ -636,6 +644,13 @@
 }
 
 @media screen and (max-width: 320px) {
+
+    .formCenter{
+        width: 100%;
+        height: auto;
+    }
+    
+
     .containerFatherForm{
         display: grid;
         max-width: 100%;
@@ -649,7 +664,7 @@
         grid-row: 1;
         grid-template-rows: repeat(2, 100%);
         justify-content: center;
-        margin-left: 160px;
+        margin-left: 170px;
     }  
     
     .titleForm{
@@ -683,10 +698,20 @@
         justify-content: center;
     }
 
+    .line{
+        display: flex;
+        grid-row: 2;
+        rotate: 90deg;
+        width: 183px;
+        height: 200px;
+        color: black;
+        margin: 50px auto auto 120px;
+    }
+
     .containerForm{
         display: grid;
         grid-row: 3;
-        width: 93px;
+        width: 80px;
         margin: -260px 500px 0 -145px;
         justify-content: center;
         margin-left: -145px;
