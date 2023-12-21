@@ -44,12 +44,12 @@
     list-style: none;
     padding: 0;
     display: flex;
-    margin-left: 130px;
-    margin-right: 130px;
+    margin-left: 100px;
+    margin-right: 100px;
   }
 
   .Logo {
-    width: 100%;
+    width: 15%;
     height: auto;
   }
   
@@ -81,11 +81,15 @@
     font-family: 'Gilory ExtraBold';
   }
 
-.btn1:Hover{
-  color: #fff;
-  border: 1px solid #fbff00;
+  .btn1:Hover{
+    color: #fff;
+    border: 1px solid #fbff00;
 
-}
+  }
+  
+  .Botones ul{
+    justify-content: center;
+  }
 
   .checkbtn{
     font-size: 40px;
@@ -98,17 +102,9 @@
     cursor: pointer;
   }
 
-.checkbtn{
-  font-size: 45px;
-  color: #ffffff;
-  line-height: 80px;
-  cursor: pointer;
-  display: none;
-}
-
-#check{
-  display:none ;
-}
+  #check{
+    display:none ;
+  }
 
 
    
@@ -136,7 +132,7 @@
 
   
   .Logo{
-    width: 70%; /* Ajuste del tamaño para dispositivos móviles */
+    width: 15%; /* Ajuste del tamaño para dispositivos móviles */
     height: auto; /* Ajuste de altura proporcional */
     margin-left: 20px; 
   }
@@ -163,10 +159,6 @@
     top: 5px;
   }
 
-  .Botones {
-    flex-direction: column;
-    margin: 0;
-  }
 
   .Botones .right{
     margin-left: 0;
@@ -184,7 +176,7 @@
     margin-left: 0;
     top: 130px;
     max-width: 100%;
-    width: 200px;
+    width: 230px;
     height: 300px;
     text-align: center;
     display: flex;
@@ -201,7 +193,7 @@
     left: -100%;
     text-align: center;
     transition: all .5s;
-  } 
+  }
 
   .btn,
   .btn1{

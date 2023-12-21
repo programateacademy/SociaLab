@@ -109,28 +109,25 @@
   .Bannerr {
     width: 100%;
     height: auto;
-    top: 40px;
   }
 
   .ImgBannerr {
-    margin-top: -40px;
     width: 100%;
     height: auto;
   }
 
   .Contenido {
-    top: 160px; /* Modifica la posición del contenido para tabletas */
-    margin-left: 200px; /* Ajuste del margen izquierdo */
+    top: 160px;
+    margin-left: 200px;
   }
 
   .titulo {
-    font-size: 23px; /* Tamaño de fuente para tabletas */
-    margin: 15px 10px; /* Margen para tabletas */
+    font-size: 14px; /* Tamaño de fuente para tabletas */
+    margin-left: 90px; /* Margen para tabletas */
   }
 
   .subtitulo {
-    font-size: 15px; /* Tamaño de fuente para tabletas */
-    margin: 15px -10px; /* Margen para tabletas */
+    display: none;
   }
 
 }
