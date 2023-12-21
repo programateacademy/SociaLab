@@ -6,17 +6,19 @@ import Banner from "../../../components/banner/Banner";
 import Footer from "../../../components/footer/Footer";
 import Up from "../../../components/up/Up";
 import  Form  from "../../../components/form/Form";
+import Services from "../../../components/services/Services";
 
 const Home = () => {
   return (
     <>
     <Navbar />
     <Banner />
+    <Services />
     <Info />
     <Portfolio />|
     <Form />
-    <Footer />
     <Up />
+    <Footer />
     </>
   )
 }

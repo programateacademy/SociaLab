@@ -45,7 +45,7 @@
   font-family: "Gilroy ExtraBold";
   font-size: 60px;
   white-space: nowrap;
-  margin-top: 250px 0 0 50px;
+  transform: translateX(75%);
 }
 
 .subtitulo {

@@ -1,27 +1,55 @@
-#container{
-    grid-auto-flow:auto;
-    border: 5px;
-    border-color: black 10px;
-    padding: 0 100px;
-    max-width: 1280px;
-    display: grid;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    gap: 1rem;
-    justify-content: space-around;
-    grid-template-columns:repeat(2, 1fr);
-    grid-gap: 20px;
-    margin: auto;
-    display: flexbox;
+.services {
+    width: 1920px;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px auto 0;
 }
 
-.servicios{
-    grid-auto-flow: auto;
-    border: 10px;
-    padding: 0 100px;
-    max-width: 1280px;
-    justify-content: center;
-    display: grid;
-    margin: auto;
-    grid-gap: 20px;
-}
+.containerservices {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 150px;
+  }
+
+  .tituloo {
+    font-family: "Gilroy ExtraBold";
+    font-size: 40px;
+    white-space: nowrap;
+  }
+  
+
+  @media screen and (max-width: 1024px) {
+    .services {
+      margin-top: 100px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+
+    .services {
+      margin-top: 100px;
+    }
+    .containerservices {
+      flex-direction: column;
+      margin-top: 2%;
+      gap: 0px;
+    }
+    }
+  
+  @media screen and (max-width: 480px) {
+    .services {
+      margin-top: 100px;
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    .services {
+      margin-top: 100px;
+    }
+  }
