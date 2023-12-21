@@ -9,7 +9,7 @@ import Up from "../../../components/up/Up";
 const Home = () => {
   return (
     <>
-
+    <Info />
     <Portfolio />|
     <Footer />
     <Up />
