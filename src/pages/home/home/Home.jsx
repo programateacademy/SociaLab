@@ -9,6 +9,8 @@ import Up from "../../../components/up/Up";
 const Home = () => {
   return (
     <>
+    <Navbar />
+    <Banner />
     <Info />
     <Portfolio />|
     <Footer />
