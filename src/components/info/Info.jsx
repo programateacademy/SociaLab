@@ -1,6 +1,5 @@
 import React from "react";
 import info from "../../assets/img/info.png";
-import Homme from "../../assets/img/Homme.png";
 import "./Info.css";
 
 const Info = () => {
@@ -32,11 +31,6 @@ const Info = () => {
               alt="imagen representativa de informacion"
             />
           </div>
-          <img
-          className="homme"
-          src={Homme}
-          alt="imagen representativa de informacion"
-        />
         </div>
       </div>
     </>
