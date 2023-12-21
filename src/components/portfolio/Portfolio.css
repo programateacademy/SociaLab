@@ -83,26 +83,25 @@ h3 {
 
 @media screen and (max-width: 1024px) {
   .ods-card {
-    min-width: 150px;
+    min-width: 100px; /* Ajuste en el ancho mínimo */
     height: auto;
   }
-  .portafolio {
+  .portfolio {
     grid-template-columns: repeat(5, 0fr);
   }
-  .ods-card {
-    display: inline-block;
-    min-width: 100px;
-    height: auto;
-  }
-
 }
+
 
 @media (max-width: 768px) {
   .ods-card {
     min-width: 150px;
     height: auto;
-    margin: 0.1rem;
     margin: 20px auto;
+  }
+
+  .portfolio {
+    grid-template-columns: repeat(3, 0fr);
+    gap: 10px 10px;
   }
 
   .ods-card__img {
@@ -117,24 +116,24 @@ h3 {
   .ods-card__description {
     font-size: 0.7rem;
   }
+
+  .ods-card:hover {
+    transform: scale(1.1);
+    transition: 1s;
+  }
 }
 
 @media (max-width: 480px) {
-  .cont {
-    margin: auto;
-    align-items: center; 
-    justify-content: center;
-    text-align: left;
-    padding: 0;
-    width: 90%;
-    height: 100%;
-  }
 
+  .descriptionp {
+    font-size: 16px;
+    padding: 0 20px;
+
+  }
   .portfolio {
     grid-template-columns: repeat(2, 0fr);
-    gap: 10px;
+    gap: 50px 10px;
     margin-top: 5%;
-
   }
 
   p{
