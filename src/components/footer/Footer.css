@@ -1,52 +1,102 @@
-/* En tu archivo CSS (por ejemplo, styles.css) */
+.footer {
+background-color: black;
+width: 100%;
+max-width: 100%;
+height: auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content:space-between;
+margin: 0 auto 0;
+top: 0;
+left: 0;
+right: 0;
 
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align:center;
-    align-items: stretch;
-    grid-template-columns: auto;
+}
+
+.logos {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  gap: 30px;
+}
+
+.tabla {
+  color: #fff;
+  text-decoration: none;
+  justify-content: space-between;
+  margin: auto;
+  gap: 30px;
+}
+.social-link{
+  display: inline-block;
+  gap: 20px 0;
+  margin-right: 10px;
+  text-decoration: none;
+  color: #fff;
+  transition: all 300ms ease;
+  margin-bottom: 10px;
    
+}
+.social-link :hover{
+  color: darkgoldenrod;
+
+}
+.social{
+  margin-right: 30px;
+}
+.footer-content{
+  color: #fff;
+  display:inline-block;
+  flex-wrap:wrap ;
+}
+.content-link{
+  margin-right: 60px;
+  color: #fff;
+  display: flex;
+  text-decoration: none;
+  transition: all 300ms ease;
+  justify-content: left;
+  align-items:flex-start
+  
+}
+ul{
+  list-style: none;
+}
+.content-link :hover{
+  color: darkgoldenrod;
+}
+.contact{
+  margin-left: 30px;
+  flex-direction: column;
+  padding-left: 40px;
+  justify-content: right;
+}
+  
+
+h1{
+  font-size: 30px;
+  align-items: center;
+}
+p{
+
+}
+#derecho{
+  background-color: #d8d8d8;
+  width: 200%;
+
+}
+
+@media (max-width: 640px){
+  .footer .footer-content .content-link .tabla .logos{
+    width: 100%;
+    display:block
+    ;
   }
   
-  .container {
-    display: flex;
-    flex-direction:column;
-    align-items: stretch;
-    grid-auto-flow: column;
-  }
-  
-  p {
-    margin: 0;
-  }
-  
-  .footer-links, .social-links {
-    margin-top: 10px;
-    justify-content: center;
-    display: block;
-    margin-top: 20px;
-    grid-area: span;
-  }
-  
-  .footer-links a, .social-links a {
-    color: #fff;
-    text-decoration:none;
-    margin: 0 10px;
-  }
-  
-  .footer-links a:hover, .social-links a:hover {
-    text-decoration: underline;
-  }
-  h1{
-    font-size: medium;
-  }
-  a,p{
-    font-size: small;
-  }
-  #derecho{
-align-items: self-end;
-padding-top: 10px;
-padding-block-end: 0px;
-  }
-  
+}
