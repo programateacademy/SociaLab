@@ -81,7 +81,7 @@ const Footer = () => {
             </div>
             <tr>
                   <td colSpan="3" id="derecho">
-                    &copy; 2023 Tu Empresa. Todos los derechos reservados.
+                    &copy; COPYRIGHT 2023. TODOS LOS DERECHOS RESERVADOS.
                   </td>
                 </tr>
       </footer>
