@@ -105,9 +105,8 @@ function Ods() {
       {filteredProjects.map((project) => (
         <div key={project.id}>
           <h2>{project.name}</h2>
-          <p>{project.summary}</p>
-          <h3 className="impact">Impacto</h3>
-          <p className="impacto">{project.impactLocation}</p>
+          <p className="summaryy">{project.summary}</p>
+          <h3 className="impact">Lugar de Impacto: {project.impactLocation}</h3>
           <div className="image-containerr">
             <h3>Colaboración con otras ODS</h3>
             <div className="icon-cards">
