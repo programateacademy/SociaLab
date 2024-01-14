@@ -12,37 +12,37 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <>
-      <footer>
-            <div className="footer">
+      <footer className="footer">
+      
             <div className="logos">
               <img src={LogoE} alt="Logo EducaMas" className="logoE" />
               <img src={Logo} alt="Logo EducaMas" className="logo" />
               <img src={Socials} alt="Logo EducaMas" className="socials" />
             </div>
-            <table className="tabla">
-              <tbody>
-                <tr>
-                  <td className="footer-content">
+            <div className="tabla">
+              {/*<tbody>
+                <tr>*/}
+                  <div className="footer-content">
                     <h1>Enlaces</h1>
                     <ul>
                       <li>
-                        <a href="/inicio" className="content-link">Inicio</a>
+                        <a href="/" className="content-link">Inicio</a>
                       </li>
                       <li>
-                        <a href="/nosotros" className="content-link">Sobre Nosotros</a>
+                        <a href="/#info" className="content-link">Sobre Nosotros</a>
                       </li>
                       <li>
-                        <a href="/servicios" className="content-link">Servicios</a>
+                        <a href="/#services" className="content-link">Servicios</a>
                       </li>
                       <li>
-                        <a href="/Portafolio" className="content-link">Portafolio</a>
+                        <a href="/#portfolio" className="content-link">Portafolio</a>
                       </li>
                       <li>
-                        <a href="/Formulario" className="content-link">Formulario</a>
+                        <a href="/#form" className="content-link">Formulario</a>
                       </li>
                     </ul>
-                  </td>
-                  <td className="social">
+                  </div>
+                  <div className="social">
                     
                     <h1>Conectemos</h1>
                     <p>Síguenos en las redes sociales</p>
@@ -68,22 +68,21 @@ const Footer = () => {
                         </a>
 
                                   
-                  </td>
-                  <td className="contact">
+                  </div>
+                  <div className="contact">
                     <h1>Contacto</h1>
                     <p>Cra. 13 #90-17</p>
                     <p>311 4508935</p>
-                  </td>
-                </tr>
+                  </div>
+               {/*</div> </tr>
                 
-              </tbody>
-            </table>
+              </tbody>*/}
             </div>
-            <tr>
-                  <td colSpan="3" id="derecho">
+        
+            <div colSpan="3" id="derecho">
                     &copy; COPYRIGHT 2023. TODOS LOS DERECHOS RESERVADOS.
-                  </td>
-                </tr>
+                  <span className="policy">POLITICAS DE PRIVACIDAD</span>
+            </div>
       </footer>
     </>
   );
