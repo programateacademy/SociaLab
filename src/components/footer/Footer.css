@@ -37,8 +37,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 5rem;
-  margin: auto;
+
 }
 .footer .tabla h1{
   color: #fff;
@@ -73,13 +72,15 @@
   color: black;
   text-align: left;
   justify-content: space-between;
+  font-size: smaller;
 }
 #derecho .policy{
 text-align: right;
-margin-left: auto;
-margin-left: 500px;
+margin-left: 700px;
 align-items: end;
 justify-content: right;
+position: absolute;
+font-size: smaller;
 }
 
 .content-link {
@@ -104,17 +105,111 @@ ul {
   padding-right: 0%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .footer .tabla{
-   display: flex;
-   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   padding-left: 50px;
+   grid-template-columns: repeat(1, 1fr);
+   grid-gap:0.2px;
+   margin-bottom: 0.5px;
+   margin-top: 0.3px;
+   padding-bottom: 0.5px;
+   height: auto;
     
   }
 
   .logos img{
-    width: 100%;
-   justify-content: center;
+    max-width: 30%;
+    height: auto;
+    margin: auto;
+    position: relative;
+    
+  }
+  #derecho{
+    
+    padding: 10px;
+    text-align: left;
+    justify-content: space-between;
+    font-size: 8px;
+  }
+  #derecho .policy{
+  
+  font-size: 8px;
+  max-width: 30%;
+  margin-left: 40%;
   }
 
 }
+
+@media screen and (max-width: 600px){
+  .footer .tabla{
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap:0.2px;
+    margin-bottom: 0.5px;
+    margin-top: 0.3px;
+    padding-bottom: 0.5px;
+    height: auto;
+     
+   }
+ 
+   .logos img{
+     max-width: 25%;
+     height: auto;
+     margin: auto;
+     position: relative;
+     
+   }
+   #derecho{
+     
+     padding: 10px;
+     text-align: left;
+     justify-content: space-between;
+     font-size: 8px;
+   }
+   #derecho .policy{
+   
+   font-size: 8px;
+   max-width: 30%;
+   margin-left: 5%;
+   }
+}
+@media screen and (max-width: 480px){
+  .footer .tabla{
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap:0.2px;
+    margin-bottom: 0.5px;
+    margin-top: 0.3px;
+    padding-bottom: 0.5px;
+    height: auto;
+     
+   }
+ 
+   .logos img{
+     max-width: 25%;
+     height: auto;
+     margin: auto;
+     position: relative;
+     
+   }
+   #derecho{
+     
+     padding: 10px;
+     text-align: left;
+     justify-content: space-between;
+     font-size: 8px;
+   }
+   #derecho .policy{
+   
+   font-size: 8px;
+   max-width: 30%;
+   margin-left: 5%;
+   }
+  }
    
