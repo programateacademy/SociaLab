@@ -20,8 +20,7 @@ const Footer = () => {
               <img src={Socials} alt="Logo EducaMas" className="socials" />
             </div>
             <div className="tabla">
-              {/*<tbody>
-                <tr>*/}
+              
                   <div className="footer-content">
                     <h1>Enlaces</h1>
                     <ul>
@@ -55,7 +54,7 @@ const Footer = () => {
                         <FaTiktok />
                         </a>
                       
-                        <a href="https://www.facebook.com/somoseducamas/" className="social-link">
+                        <a href="https://www.instagram.com/somoseducamas/" className="social-link">
                         <FaInstagram />
                         </a>
                     
@@ -74,9 +73,9 @@ const Footer = () => {
                     <p>Cra. 13 #90-17</p>
                     <p>311 4508935</p>
                   </div>
-               {/*</div> </tr>
+               
                 
-              </tbody>*/}
+              
             </div>
         
             <div colSpan="3" id="derecho">
