@@ -16,15 +16,16 @@ const Form = () => {
     emailjs.sendForm('service_gmuij79', 'template_47qidvc', form.current, 'BH4fKMw7xWWl-qm4R')
       .then((result) => {
           console.log(result.text);
-      }, (error) => {
+          form.current.reset();
+      },
+      (error) => {
           console.log(error.text);
       });
   };
 
-  const sended = () => {
-    alert('Formulario enviado')
+  const sended = (reset) => {
+    alert('Formulario enviado');
   }
-
   /*const btnAbrirModal = document.getElementById('pop-upOpen')
 
   btnAbrirModal.addEventListener("click",()=>{
@@ -41,7 +42,7 @@ const Form = () => {
 
         <div className='line'> <img src={lineForm} alt="."/></div>
 
-        <form className='containerForm' ref={form} onSubmit={sendEmail}>
+        <form className='containerForm' ref={form} onSubmit={sendEmail} id='reset' >
 
           <input className='input' type="text" name="org_name" placeholder='Nombre de la empresa / organización'/>
 
@@ -49,7 +50,7 @@ const Form = () => {
           
           <input className='input' type="text" name="user_name" placeholder='Nombre del responsable del proyecto'/>
 
-          <input className='input' type="text" name="user_phone" placeholder='Teléfono de contacto del responsable'/>
+          <input className='input' type="number" name="user_phone" placeholder='Teléfono de contacto del responsable'/>
 
           <input className='input' type="email" name="user_email" placeholder='Email  de contacto del responsable'/>
 

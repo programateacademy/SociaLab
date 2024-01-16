@@ -56,6 +56,7 @@
     height: 368px;
     margin: 100px 100px 0 120px;
     color: black;
+    transform: translateX(142px);
 }
 
 .containerForm{
@@ -214,7 +215,7 @@
         display: flex;
         width: 1px;
         height: 368px;
-        margin: 80px -20px 0 20px;
+        margin: 0 0 0 0;
         color: black;
     }    
     
@@ -379,6 +380,7 @@
         height: 200px;
         color: black;
         margin: 40px auto auto 200px;
+        color: invisible;
     }
 
     .containerForm{
@@ -497,7 +499,7 @@
         grid-row: 1;
         grid-template-rows: repeat(2, 100%);
         justify-content: center;
-        margin-left: 310px;
+        margin-left: 220px;
     }  
     
     .titleForm{
@@ -532,22 +534,23 @@
     }
     
     .line{
-        display: flex;
+        color: transparent;
+        /*display: block;
         grid-row: 2;
         rotate: 90deg;
         width: 183px;
         height: 200px;
         color: black;
-        margin: 50px auto auto 225px;
+        margin: -100px auto 100px 228px;/*
     }
 
     .containerForm{
         display: grid;
         grid-row: 3;
         width: 93px;
-        margin: -260px 500px 0 -145px;
+        /*margin: -260px 500px 0 -145px;*/
         justify-content: center;
-        margin-left: -95px;
+        /*margin-left: -85px;*/
     }
 
     .input {
@@ -699,13 +702,13 @@
     }
 
     .line{
-        display: flex;
+        display: block;
         grid-row: 2;
         rotate: 90deg;
         width: 183px;
         height: 200px;
-        color: black;
-        margin: 50px auto auto 120px;
+        color: none;
+        margin: 0 auto 0 120px;
     }
 
     .containerForm{
@@ -714,7 +717,7 @@
         width: 80px;
         margin: -260px 500px 0 -145px;
         justify-content: center;
-        margin-left: -145px;
+        /*margin-left: -145px;*/
     }
 
     .input {
