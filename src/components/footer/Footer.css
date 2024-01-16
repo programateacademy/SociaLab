@@ -1,15 +1,3 @@
-/*
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  border: none;
-  outline: none;
-  scroll-behavior: smooth;
-  font-family: gilroy Light;
-}*/
-
 @font-face {
   font-family: 'Gilroy Light';
   src: url();
@@ -66,7 +54,7 @@
 .social-link :hover {
   color: darkgoldenrod;
 }
-#derecho{
+.terminos{
   background-color: #d8d8d8;
   padding: 15px 10px;
   color: black;
@@ -74,13 +62,12 @@
   justify-content: space-between;
   font-size: smaller;
 }
-#derecho .policy{
+.terminos .policy{
 text-align: right;
-margin-left: 700px;
-align-items: end;
-justify-content: right;
-position: absolute;
+position: relative;
 font-size: smaller;
+margin-left: 70%;
+
 }
 
 .content-link {
@@ -126,14 +113,14 @@ ul {
     position: relative;
     
   }
-  #derecho{
+  .terminos{
     
     padding: 10px;
     text-align: left;
     justify-content: space-between;
     font-size: 8px;
   }
-  #derecho .policy{
+  .terminos .policy{
   
   font-size: 8px;
   max-width: 30%;
@@ -163,14 +150,14 @@ ul {
      position: relative;
      
    }
-   #derecho{
+   .terminos{
      
      padding: 10px;
      text-align: left;
      justify-content: space-between;
      font-size: 8px;
    }
-   #derecho .policy{
+   .terminos .policy{
    
    font-size: 8px;
    max-width: 30%;
@@ -198,18 +185,38 @@ ul {
      position: relative;
      
    }
-   #derecho{
+   .terminos{
      
      padding: 10px;
      text-align: left;
      justify-content: space-between;
-     font-size: 8px;
+     font-size: 6px;
    }
-   #derecho .policy{
+   .policy{
    
-   font-size: 8px;
+   font-size: 6px;
    max-width: 30%;
-   margin-left: 5%;
+   text-align: right;
+   padding-left: 10%;
    }
   }
-   
+
+  @media screen and (max-width: 360px){
+       
+    .policy{
+      max-width: 30%;
+      padding-left: 4%;
+      
+      }
+  }
+  @media screen and (max-width: 1050px){
+       
+    .terminos .policy{
+      font-size: 8px;
+      max-width: 30%;
+      margin-left: 40%;
+        
+     
+      }
+  
+  }

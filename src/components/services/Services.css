@@ -46,10 +46,23 @@
     .services {
       margin-top: 100px;
     }
+
+    .tituloo{
+      font-size: 33px;
+      
+
+    }
+    h2 .servicio{
+      font-size: 20px;
+    }
   }
   
   @media screen and (max-width: 320px) {
     .services {
       margin-top: 100px;
+
     }
+    .tituloo{
+      font-size: 33px;
+      }
   }

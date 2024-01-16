@@ -78,9 +78,9 @@ const Footer = () => {
               
             </div>
         
-            <div colSpan="3" id="derecho">
-                    &copy; COPYRIGHT 2023. TODOS LOS DERECHOS RESERVADOS.
-                  <span className="policy">POLITICAS DE PRIVACIDAD</span>
+            <div className="terminos"> 
+              < span className="derecho"> &copy; COPYRIGHT 2023. TODOS LOS DERECHOS RESERVADOS.</span>
+              <span className="policy">POLITICAS DE PRIVACIDAD</span>
             </div>
       </footer>
     </>
