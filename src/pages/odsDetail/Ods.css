@@ -233,6 +233,11 @@ h3 {
 }
 
 @media only screen and (max-width: 480px) {
+
+  .ods {
+    margin-top: 100px;
+  }
+
   .containerr {
     margin: 50px 0%;
     padding: 0 1px;
@@ -254,7 +259,7 @@ h3 {
 
   h2 {
     margin-top: 10px;
-    font-size: 25px;
+    font-size: 30px;
     margin-bottom: 10px;
   }
 
@@ -283,12 +288,22 @@ h3 {
   .image-containerr h3 {
     margin-top: -50px;
     margin-bottom: 5%;
+    font-size: 20px;
+  }
+
+  .icon-cards__item {
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    margin-right: 10px;
+    text-align: center;
+    justify-content: center;
   }
 
   .icon-cards__item img {
-    width: 25%;
     margin: 0 5px;
     margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
   }
 
   @keyframes scroll {
