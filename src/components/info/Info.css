@@ -8,13 +8,12 @@
 }
 
 .nosotros {
-
   font-family: 'Gilroy ExtraBold';
   text-align: center;
   color: rgb(0, 0, 0);
   font-size: 25px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   width: 100%; 
   max-width: 100%; 
 }
@@ -27,16 +26,19 @@
   padding-right: 50px;
 }
 
-
 .parrafo1 {
   font-family: 'Gilroy Light';
   font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
 .parrafo2 {
   text-align: center;
   font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-family: 'Gilroy Light';
   text-align: left;
 }
@@ -48,6 +50,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .image-container {
@@ -109,7 +113,10 @@
     max-width: 100%;
     margin: 10px;
     font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
+
   .parrafo1, .parrafo2 {
     font-size: 20px;
   }
@@ -129,6 +136,8 @@
     max-width: 100%;
     margin: 10px;
     font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .parrafo1, .parrafo2 {
     font-size: 20px;
@@ -149,8 +158,11 @@
   .info, .obj, .nosotros {
     max-width: 100%;
     margin: 10px;
-    font-size: 20px;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
+
   .parrafo1, .parrafo2 {
     font-size: 18px;
   }
@@ -171,6 +183,8 @@
     max-width: 100%;
     margin: 10px;
     font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .parrafo1, .parrafo2 {
     font-size: 18px;
@@ -192,6 +206,8 @@
     max-width: 100%;
     margin: 10px;
     font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .parrafo1, .parrafo2 {
@@ -215,6 +231,8 @@
     max-width: 100%;
     margin: 10px;
     font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .parrafo1, .parrafo2 {
