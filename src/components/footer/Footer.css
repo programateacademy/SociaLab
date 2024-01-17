@@ -1,19 +1,14 @@
-/*
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  border: none;
-  outline: none;
-  scroll-behavior: smooth;
-  font-family: gilroy Light;
-}*/
+@font-face {
+  font-family: 'Gilroy ExtraBold';
+  src: url('../../assets/fonts/FONTSFREE-NET-GILROY-EXTRABOLD.TTF') format('truetype');
+}
+
 
 @font-face {
   font-family: 'Gilroy Light';
-  src: url();
+  src: url('../../assets/fonts/GILROY-LIGHT.TTF') format('truetype');
 }
+
 
 .footer{
   width: 100%;
@@ -66,21 +61,19 @@
 .social-link :hover {
   color: darkgoldenrod;
 }
-#derecho{
+.terminos{
   background-color: #d8d8d8;
   padding: 15px 10px;
   color: black;
-  text-align: left;
   justify-content: space-between;
   font-size: smaller;
 }
-#derecho .policy{
+.policy{
 text-align: right;
-margin-left: 700px;
-align-items: end;
-justify-content: right;
-position: absolute;
+position: relative;
 font-size: smaller;
+margin-left: 60%;
+
 }
 
 .content-link {
@@ -126,14 +119,14 @@ ul {
     position: relative;
     
   }
-  #derecho{
+  .terminos{
     
     padding: 10px;
     text-align: left;
     justify-content: space-between;
     font-size: 8px;
   }
-  #derecho .policy{
+  .policy{
   
   font-size: 8px;
   max-width: 30%;
@@ -163,18 +156,17 @@ ul {
      position: relative;
      
    }
-   #derecho{
+   .terminos{
      
      padding: 10px;
-     text-align: left;
      justify-content: space-between;
      font-size: 8px;
    }
-   #derecho .policy{
+   .policy{
    
    font-size: 8px;
    max-width: 30%;
-   margin-left: 5%;
+   margin-left: 12%;
    }
 }
 @media screen and (max-width: 480px){
@@ -198,18 +190,32 @@ ul {
      position: relative;
      
    }
-   #derecho{
+   .terminos{
      
      padding: 10px;
      text-align: left;
      justify-content: space-between;
-     font-size: 8px;
+     font-size: 6px;
    }
-   #derecho .policy{
+   .policy{
    
-   font-size: 8px;
+   font-size: 6px;
    max-width: 30%;
-   margin-left: 5%;
+   text-align: right;
+   padding-left: 10%;
    }
   }
-   
+
+  @media screen and (max-width: 360px){
+       
+    .policy{
+    font-size: 6px;
+    max-width: 30%;
+    text-align: right;
+    padding-left: 3%;
+   }
+      }
+  
+ 
+  
+  

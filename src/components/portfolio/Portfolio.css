@@ -3,10 +3,6 @@
   src: url('../../assets/fonts/FONTSFREE-NET-GILROY-EXTRABOLD.TTF') format('truetype');
 }
 
-@font-face {
-  font-family: 'Gilroy Light';
-  src: url('../../assets/fonts/GILROY-LIGHT.TTF') format('truetype');
-}
 
 .cont {
   display: flex;
@@ -20,7 +16,8 @@
   margin-bottom: 154px;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: 'Gilroy ExtraBold';
   font-size: 40px;
   margin-bottom: 70px;
@@ -77,15 +74,18 @@ h3 {
   align-items: center;
   margin-left: -8%;
 }
+
 .disabled-card:hover {
   opacity: 0.5;
 }
 
 @media screen and (max-width: 1024px) {
   .ods-card {
-    min-width: 100px; /* Ajuste en el ancho mínimo */
+    min-width: 100px;
+    /* Ajuste en el ancho mínimo */
     height: auto;
   }
+
   .portfolio {
     grid-template-columns: repeat(5, 0fr);
   }
@@ -93,6 +93,7 @@ h3 {
 
 
 @media (max-width: 768px) {
+
   .ods-card {
     min-width: 150px;
     height: auto;
@@ -125,31 +126,38 @@ h3 {
 
 @media (max-width: 480px) {
 
+  .title {
+    font-size: 20px;
+  }
+
   .descriptionp {
-    font-size: 16px;
+    font-size: 18px;
     padding: 0 20px;
 
   }
+
   .portfolio {
     grid-template-columns: repeat(2, 0fr);
     gap: 50px 10px;
     margin-top: 5%;
   }
 
-  p{
-    font-size: 16px;
+  p {
+    font-size: 18px;
     margin: 0 auto;
   }
 
   .ods-card {
     min-width: 120px;
-    height: 120px;  
+    height: 120px;
     margin: auto;
   }
+
   .ods-card:hover {
     transform: scale(1.1);
     transition: 1s;
   }
+
   .project-count {
     width: 98%;
     margin: 0 auto;
