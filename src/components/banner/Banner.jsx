@@ -9,7 +9,6 @@ const Banner = () => {
       <div className="Bannerr">
         <img className="ImgBannerr" src={ImgBanner} alt="" />
         <div className="Contenido">
-          <h1 className="titulo">Construimos Software Moderno</h1>
           <p className="subtitulo">
             {" "}
             <LuCheck />

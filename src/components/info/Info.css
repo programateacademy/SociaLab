@@ -4,7 +4,6 @@
   height: auto;
   margin: 10px auto 0;
   margin-bottom: 154px;
-  padding: 10px;
   text-align: center;
 }
 
@@ -15,9 +14,8 @@
   font-size: 25px;
   margin-top: 20px;
   margin-bottom: 20px;
-  padding: 10px;
-  width: 100%; 
-  max-width: 100%; 
+  width: 100%;
+  max-width: 100%;
 }
 
 .grid {
@@ -72,12 +70,17 @@
 
 /* Estilos adicionales para dispositivos más pequeños */
 @media screen and (max-width: 1280px) {
-  .info, .obj, .nosotros {
+
+  .info,
+  .obj,
+  .nosotros {
     max-width: 100%;
     margin: 10px;
     font-size: 25px;
   }
-  .parrafo1, .parrafo2 {
+
+  .parrafo1,
+  .parrafo2 {
     font-size: 20px;
   }
 
@@ -93,12 +96,17 @@
 }
 
 @media screen and (max-width: 1040px) {
-  .info, .obj, .nosotros {
+
+  .info,
+  .obj,
+  .nosotros {
     max-width: 100%;
     margin: 10px;
     font-size: 25px;
   }
-  .parrafo1, .parrafo2 {
+
+  .parrafo1,
+  .parrafo2 {
     font-size: 20px;
   }
 
@@ -114,7 +122,10 @@
 }
 
 @media screen and (max-width: 766px) and (min-width: 630px) {
-  .info, .obj, .nosotros {
+
+  .info,
+  .obj,
+  .nosotros {
     max-width: 100%;
     margin: 10px;
     font-size: 25px;
@@ -122,9 +133,11 @@
     margin-bottom: 10px;
   }
 
-  .parrafo1, .parrafo2 {
+  .parrafo1,
+  .parrafo2 {
     font-size: 20px;
   }
+
   .grid {
     grid-template-columns: 1fr;
     margin: 10px;
@@ -137,20 +150,19 @@
 }
 
 @media screen and (max-width: 640px) and (min-width: 590px) {
-  .info, .obj, .nosotros {
+
+  .info,
+  .obj,
+  .nosotros {
     max-width: 100%;
-    margin: 10px;
     font-size: 25px;
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  .parrafo1, .parrafo2 {
-    font-size: 20px;
-  }
 
-  .grid {
-    grid-template-columns: 1fr;
-    margin: 10px;
+  .parrafo1,
+  .parrafo2 {
+    font-size: 20px;
   }
 
   .info-image {
@@ -160,21 +172,19 @@
 }
 
 @media screen and (max-width: 560px) and (min-width: 480px) {
-  .info, .obj, .nosotros {
+
+  .info,
+  .obj,
+  .nosotros {
     max-width: 100%;
-    margin: 10px;
     font-size: 25px;
     margin-top: 10px;
     margin-bottom: 10px;
   }
 
-  .parrafo1, .parrafo2 {
+  .parrafo1,
+  .parrafo2 {
     font-size: 18px;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-    margin: 10px;
   }
 
   .info-image {
@@ -184,69 +194,19 @@
 }
 
 @media screen and (max-width: 480px) and (min-width: 319px) {
-  .info, .obj, .nosotros {
-    max-width: 100%;
-    margin: 10px;
-    font-size: 35px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  .parrafo1, .parrafo2 {
-    font-size: 18px;
-  }
 
-  .grid {
-    grid-template-columns: 1fr;
-    margin: 10px;
-  }
-
-  .info-image {
+  .info,
+  .obj,
+  .nosotros {
     max-width: 100%;
-    height: auto;
-  }
-}
-
-@media screen and (max-width: 320px) and (min-width: 224px) {
-  .info, .obj, .nosotros {
-    max-width: 100%;
-    margin: 10px;
     font-size: 35px;
     margin-top: 10px;
     margin-bottom: 10px;
   }
 
-  .parrafo1, .parrafo2 {
+  .parrafo1,
+  .parrafo2 {
     font-size: 18px;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-    margin: 10px;
-    max-width: 100%;
-  }
-
-  .info-image {
-    max-width: 100%;
-    height: auto;
-  }
-}
-
-@media screen and (max-width: 220px) and (min-width: 100px) {
-  .info, .obj, .nosotros {
-    max-width: 100%;
-    margin: 10px;
-    font-size: 35px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  .parrafo1, .parrafo2 {
-    font-size: 18px;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-    margin: 10px;
   }
 
   .info-image {

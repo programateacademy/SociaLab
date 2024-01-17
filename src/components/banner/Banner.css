@@ -12,7 +12,7 @@
   position: relative;
   width: 1920px;
   top: 40px;
-  max-width:100% ;
+  max-width: 100%;
   margin: 0 auto 0;
   left: 0;
   right: 0;
@@ -41,20 +41,15 @@
   justify-content: space-between;
 }
 
-.titulo {
-  font-family: "Gilroy ExtraBold";
-  font-size: 60px;
-  white-space: nowrap;
-  transform: translateX(75%);
-}
-
 .subtitulo {
   font-family: "Gilroy Light";
   font-size: 25px;
   margin-left: 880px;
   white-space: nowrap;
-  width: 48%; /* Establece el ancho para que los elementos se distribuyan en dos columnas */
-  margin-bottom: 10px -10px; /* Espacio entre las frases */
+  width: 48%;
+  /* Establece el ancho para que los elementos se distribuyan en dos columnas */
+  margin-bottom: 10px -10px;
+  /* Espacio entre las frases */
 }
 
 /* Estilos para celulares */
@@ -122,8 +117,10 @@
   }
 
   .titulo {
-    font-size: 14px; /* Tamaño de fuente para tabletas */
-    margin-left: 90px; /* Margen para tabletas */
+    font-size: 14px;
+    /* Tamaño de fuente para tabletas */
+    margin-left: 90px;
+    /* Margen para tabletas */
   }
 
   .subtitulo {
@@ -139,7 +136,7 @@
     top: 40px;
 
   }
-  
+
   .ImgBannerr {
     margin-top: -40px;
     width: 100%;
@@ -150,7 +147,7 @@
 
   .titulo {
     font-size: 23px;
-    margin: 15px 10px; 
+    margin: 15px 10px;
   }
 
   .subtitulo {
