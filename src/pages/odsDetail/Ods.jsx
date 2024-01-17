@@ -97,70 +97,72 @@ function Ods() {
 
   return (
     <Layout>
-    <div className="containerr">
-      <div className="ods">
-        <img src={currentODS.image} alt={currentODS.name} />
-        <h1>{currentODS.name}</h1>
-      </div>
-      {filteredProjects.map((project) => (
-        <div key={project.id}>
-          <h2>{project.name}</h2>
-          <p className="summaryy">{project.summary}</p>
-          <h3 className="impact">Lugar de Impacto: {project.impactLocation}</h3>
-          <div className="image-containerr">
-            <h3>Colaboración con otras ODS</h3>
-            <div className="icon-cards">
-              <div className="icon-cards__content">
-                <div className="icon-cards__item">
-                  {project.image.map((img, index) => (
-                    <img key={index} src={img} alt={`Image ${index + 1}`} />
-                  ))}
+      <div className="containerr">
+        <div className="ods">
+          <img src={currentODS.image} alt={currentODS.name} />
+          <h1>{currentODS.name}</h1>
+        </div>
+        {filteredProjects.map((project) => (
+          <div key={project.id}>
+            <h2>{project.name}</h2>
+            <p className="summaryy">{project.summary}</p>
+            <h3 className="impact">
+              Lugar de Impacto: {project.impactLocation}
+            </h3>
+            <div className="image-containerr">
+              <h3>Colaboración con otras ODS</h3>
+              <div className="icon-cards">
+                <div className="icon-cards__content">
+                  <div className="icon-cards__item">
+                    {project.image.map((img, index) => (
+                      <img key={index} src={img} alt={`Image ${index + 1}`} />
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
+            {project.gitUrl && (
+              <button className="btnn">
+                <a
+                  className="btna"
+                  href={project.gitUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGit />
+                  Backend
+                </a>
+              </button>
+            )}
+            {project.gitUrl2 && (
+              <button className="btnn">
+                <a
+                  className="btna"
+                  href={project.gitUrl2}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub />
+                  Frontend
+                </a>
+              </button>
+            )}
+            {project.liveUrl && (
+              <button className="btnn">
+                <a
+                  className="btna"
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGlobe />
+                  Demo
+                </a>
+              </button>
+            )}
           </div>
-          {project.gitUrl && (
-            <button className="btnn">
-              <a
-                className="btna"
-                href={project.gitUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaGit />
-                Backend
-              </a>
-            </button>
-          )}
-          {project.gitUrl2 && (
-            <button className="btnn">
-              <a
-                className="btna"
-                href={project.gitUrl2}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaGithub />
-                Frontend
-              </a>
-            </button>
-          )}
-          {project.liveUrl && (
-            <button className="btnn">
-              <a
-                className="btna"
-                href={project.liveUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaGlobe />
-                Demo
-              </a>
-            </button>
-          )}
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
     </Layout>
   );
 }
