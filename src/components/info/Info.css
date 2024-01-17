@@ -2,8 +2,9 @@
   width: 1920px;
   max-width: 100%;
   height: auto;
-  margin: 100px auto 0;
-  margin-bottom: 0px;
+  margin: 0 auto 0;
+  margin-bottom: 154px;
+  text-align: center;
 }
 
 .nosotros {
@@ -13,7 +14,9 @@
   color: rgb(0, 0, 0);
   font-size: 25px;
   margin-top: 10px;
-  position: relative;
+  margin-bottom: 10px;
+  width: 100%; 
+  max-width: 100%; 
 }
 
 .grid {
