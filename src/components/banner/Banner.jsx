@@ -9,15 +9,15 @@ const Banner = () => {
       <div className="Bannerr">
         <img className="ImgBannerr" src={ImgBanner} alt="" />
         <div className="Contenido">
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
           <p className="subtitulo">
             {" "}
             <LuCheck />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
             Seguridad total
           </p>
           <p className="subtitulo">
