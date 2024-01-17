@@ -60,12 +60,19 @@
     }
   }
   
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 360px) {
     .services {
       margin-top: 100px;
 
     }
     .tituloo{
-      font-size: 33px;
+      font-size: 29px;
+      }
+    h2{
+      font-size: 18px;
+    }
+
+    .imgservices{
+        max-width: 50%;
       }
   }
