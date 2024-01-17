@@ -46,6 +46,9 @@
     .services {
       margin-top: 100px;
     }
+    .imgservices{
+      max-width: 60%;
+    }
 
     .tituloo{
       font-size: 33px;

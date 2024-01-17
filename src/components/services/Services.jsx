@@ -12,15 +12,15 @@ const Services = () => {
         <div className="containerservices">
           <div className="servicios">
             <h2 className="servicio">CREACIÓN DE LANDING PAGE</h2>
-            <img src={Creacion} alt="Creación de landing page" />
+            <img className="imgservices" src={Creacion} alt="Creación de landing page" />
           </div>
           <div className="servicios">
             <h2 className="servicio">AUTOMATIZACIÓN DE PROCESOS</h2>
-            <img src={Automatizacion} alt="Creación de landing page" />
+            <img className="imgservices" src={Automatizacion} alt="Creación de landing page" />
           </div>
           <div className="servicios">
             <h2 className="servicio">MEJORAS DE PLATAFORMA</h2>
-            <img src={Mejoras} alt="Creación de landing page" />
+            <img className="imgservices" src={Mejoras} alt="Creación de landing page" />
           </div>
         </div>
       </div>

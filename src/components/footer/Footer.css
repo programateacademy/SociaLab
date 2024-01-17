@@ -1,7 +1,14 @@
 @font-face {
-  font-family: 'Gilroy Light';
-  src: url();
+  font-family: 'Gilroy ExtraBold';
+  src: url('../../assets/fonts/FONTSFREE-NET-GILROY-EXTRABOLD.TTF') format('truetype');
 }
+
+
+@font-face {
+  font-family: 'Gilroy Light';
+  src: url('../../assets/fonts/GILROY-LIGHT.TTF') format('truetype');
+}
+
 
 .footer{
   width: 100%;
@@ -58,15 +65,14 @@
   background-color: #d8d8d8;
   padding: 15px 10px;
   color: black;
-  text-align: left;
   justify-content: space-between;
   font-size: smaller;
 }
-.terminos .policy{
+.policy{
 text-align: right;
 position: relative;
 font-size: smaller;
-margin-left: 70%;
+margin-left: 60%;
 
 }
 
@@ -120,7 +126,7 @@ ul {
     justify-content: space-between;
     font-size: 8px;
   }
-  .terminos .policy{
+  .policy{
   
   font-size: 8px;
   max-width: 30%;
@@ -153,15 +159,14 @@ ul {
    .terminos{
      
      padding: 10px;
-     text-align: left;
      justify-content: space-between;
      font-size: 8px;
    }
-   .terminos .policy{
+   .policy{
    
    font-size: 8px;
    max-width: 30%;
-   margin-left: 5%;
+   margin-left: 12%;
    }
 }
 @media screen and (max-width: 480px){
@@ -204,19 +209,13 @@ ul {
   @media screen and (max-width: 360px){
        
     .policy{
-      max-width: 30%;
-      padding-left: 4%;
-      
-      }
-  }
-  @media screen and (max-width: 1050px){
-       
-    .terminos .policy{
-      font-size: 8px;
-      max-width: 30%;
-      margin-left: 40%;
-        
-     
+    font-size: 6px;
+    max-width: 30%;
+    text-align: right;
+    padding-left: 3%;
+   }
       }
   
-  }
+ 
+  
+  

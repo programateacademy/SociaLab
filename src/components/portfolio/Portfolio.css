@@ -3,10 +3,6 @@
   src: url('../../assets/fonts/FONTSFREE-NET-GILROY-EXTRABOLD.TTF') format('truetype');
 }
 
-@font-face {
-  font-family: 'Gilroy Light';
-  src: url('../../assets/fonts/GILROY-LIGHT.TTF') format('truetype');
-}
 
 .cont {
   display: flex;
