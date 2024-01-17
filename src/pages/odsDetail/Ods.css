@@ -125,10 +125,9 @@ h3 {
   }
 
   .ods img {
-    width: 100%;
     max-width: auto;
     margin-bottom: 50px;
-    margin-top: 100%;
+    margin-top: 150px;
   }
 
   h1 {
@@ -167,7 +166,7 @@ h3 {
 
   .icon-cards__item {
     display: grid;
-    grid-template-columns: repeat(3, 0fr);
+    grid-template-columns: repeat(5, 0fr);
     margin-right: 10px;
     text-align: center;
     justify-content: center;
