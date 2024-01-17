@@ -3,20 +3,22 @@
 .button-up {
   position: fixed;
   cursor: pointer;
-  justify-content: center;
-  align-items: center;
-  display: flex;
   bottom: 15px;
   left: 50%;
+  transform: translateX(-50%);
   background-color: #fff;
   border-radius: 20.5px;
   padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Estilos generales para dispositivos más pequeños */
 @media screen and (max-width: 1004px) {
   .button-up {
     left: 50%;
+    transform: translateX(-20%);
     margin: 10px;
   }
 }
