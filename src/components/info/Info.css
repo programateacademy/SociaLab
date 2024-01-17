@@ -2,8 +2,9 @@
   width: 1920px;
   max-width: 100%;
   height: auto;
-  margin: 0 auto 0;
+  margin: 10px auto 0;
   margin-bottom: 154px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -14,6 +15,7 @@
   font-size: 25px;
   margin-top: 20px;
   margin-bottom: 20px;
+  padding: 10px;
   width: 100%; 
   max-width: 100%; 
 }
@@ -31,11 +33,13 @@
   font-size: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
+  padding: 10px;
   text-align: center;
 }
 
 .parrafo2 {
   text-align: center;
+  padding: 10px;
   font-size: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -46,6 +50,7 @@
 .obj {
   font-family: 'Gilroy ExtraBold';
   font-size: 25px;
+  padding: 10px;
   margin: 40px 0 40px 0;
   align-items: center;
   justify-content: center;
