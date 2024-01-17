@@ -568,7 +568,7 @@
     grid-column: 1/2;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    margin: auto auto -80px 30px;
+    margin: auto auto -80px 40px;
   }
 
   .titleForm {
@@ -604,7 +604,7 @@
     display: grid;
     grid-row: 2 / 3;
     grid-column: 1 / 2;
-    margin: auto 100px auto -45px;
+    margin: auto 100px auto -30px;
     grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
     grid-template-rows: repeat(9, 1fr);
     border-radius: 15px;
@@ -736,7 +736,7 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    margin: auto auto 80px auto;
+    margin: auto auto auto auto;
   }
 
   .containerText {
@@ -745,7 +745,7 @@
     grid-column: 1/2;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    margin: auto auto auto 10px;
+    margin: auto auto auto 20px;
   }
 
   .titleForm {
@@ -782,7 +782,7 @@
     width: 345px;
     grid-row: 2 / 3;
     grid-column: 1 / 2;
-    margin: -150px auto auto -60px;
+    margin: -100px auto auto -50px;
     grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
     grid-template-rows: repeat(9, 1fr);
     border-radius: 15px;
