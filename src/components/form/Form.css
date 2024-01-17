@@ -1,104 +1,492 @@
-
-.formCenter{
-    width: 1920px;
-    max-width: 100%;
-    height: auto;
-    margin: 100px auto 0;
+@font-face {
+  font-family: 'Gilroy ExtraBold';
+  src: url('../../assets/fonts/GILROY-EXTRABOLD.TTF') format('truetype');
 }
 
-.containerFatherForm{
+@font-face {
+  font-family: 'Gilroy Light';
+  src: url('../../assets/fonts/GILROY-LIGHT.TTF') format('truetype');
+}
+
+.containerFatherForm {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  margin: 50px 100px 50px 100px;
+}
+
+.containerText {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: -30px auto auto auto;
+  gap: 10px;
+}
+
+.titleForm {
+  grid-row: 1/2;
+  grid-column: 1/3;
+  width: 239px;
+  color: #FDC300;
+  font-family: 'Gilroy ExtraBold';
+  font-size: 44px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.pForm {
+  grid-row: 2/3;
+  grid-column: 1/3;
+  margin-top: -20px;
+  width: 350px;
+  flex-shrink: 0;
+  align-self: stretch;
+  color: #000;
+  font-family: 'Gilroy Light';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.line {
+  display: flex;
+  width: 1px;
+  height: 368px;
+  margin: 100px auto auto auto;
+  color: black;
+  /*transform: translateX(150px);*/
+}
+
+.containerForm {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  grid-template-rows: repeat(9, 1fr);
+  width: 400px;
+  border-radius: 15px;
+  gap: 10px;
+}
+
+/*
+.locI1{
+  grid-row: 1/2;
+}
+
+.locI2{
+  grid-row: 2/3;
+}
+
+.locI3{
+  grid-row: 3/4;
+}
+.locI4{
+  grid-row: 4/5;
+}
+
+.locI5{
+  grid-row: 5/6;
+}*/
+
+.input {
+  display: grid;
+  grid-row: 1 / 2, 2 / 3, 3 / 4, 4 / 5;
+  grid-column: 1 / 7;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #000;
+  font-family: 'Gilroy Light';
+  font-size: 1em;
+}
+
+/*.locSelect1{
+  grid-row: 6 / 7;
+}
+
+.locSelect2 {
+  grid-row: 7 / 8;
+}*/
+
+.select {
+  display: grid;
+  grid-row: 6 / 7, 7 / 8;
+  grid-column: 1 / 7;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #000;
+  font-family: 'Gilroy Light';
+  font-size: 1em;
+}
+
+/*.option {
+  width: 20px;
+  background-color: transparent;
+  padding: 12px 20px;
+  margin: 10px;
+  align-self: stretch;
+  overflow: hidden;
+  border: 1px solid #000;
+  font-family: 'Gilroy Light';
+  font-size: 1em;
+}*/
+
+.textarea {
+  display: flex;
+  grid-row: 8 / 9;
+  grid-column: 1 / 7;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #000;
+  font-family: 'Gilroy Light';
+  font-size: 1em;
+}
+
+.button {
+  display: flex;
+  grid-row: 9 / 10;
+  grid-column: 3 / 5;
+  height: 30px;
+  padding: 14px 20px;
+  margin: 0px auto auto 20px;
+  align-items: center;
+  border-radius: 15px;
+  border: 1px solid #000;
+  background: rgba(253, 195, 0);
+  font-family: 'Gilroy Extrabold';
+  font-size: 1em;
+}
+
+.input:hover {
+  transition: all 0.3s ease;
+  border-color: rgba(253, 195, 0);
+}
+
+.select:hover {
+  transition: all 0.3s ease;
+  border-color: rgba(253, 195, 0);
+}
+
+.textarea:hover {
+  transition: all 0.3s ease;
+  border-color: rgba(253, 195, 0);
+}
+
+.button:hover {
+  transition: all 0.3s ease;
+  background: rgba(253, 195, 0);
+  color: #fff;
+  margin: 2px auto auto 22px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+  .containerFatherForm {
     display: grid;
-    grid-template-columns: repeat(3, 35%);
-    padding: 50px;
-    margin: 20px 100px;
-}
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin-right: 50px;
+    margin-left: 10px;
+  }
 
-.containerText{
+  .containerText {
     display: grid;
-    grid-template-columns: repeat(1, 100%);
-}
+    grid-column: 1/2;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: -30px auto auto auto;
+    gap: 10px;
+  }
 
-.titleForm{
+  .titleForm {
+    width: 300px;
+    grid-row: 1/2;
+    grid-column: 1/3;
+    width: 239px;
     color: #FDC300;
     font-family: 'Gilroy ExtraBold';
-    font-size: 48px;
+    font-size: 40px;
     font-style: normal;
     line-height: normal;
-}
+  }
 
-.pForm{
-    width: 350px;
-    height: 164px;
+  .pForm {
+    width: 300px;
+    grid-row: 2/3;
+    grid-column: 1/3;
+    margin-top: -20px;
     flex-shrink: 0;
     align-self: stretch;
     color: #000;
     font-family: 'Gilroy Light';
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: -20px;
-}
+  }
 
-.line{
+  .line {
     display: flex;
-    grid-column: 2;
+    grid-column: 2/3;
+    grid-row: 1/2;
     width: 1px;
     height: 368px;
-    margin: 100px 100px 0 120px;
+    margin: 45px -20px auto 30px;
     color: black;
-    transform: translateX(142px);
-}
+    /*transform: translateX(150px);*/
+  }
 
-.containerForm{
+  .containerForm {
     display: grid;
-    grid-template-columns: repeat(1, 100%);
-    width: 400px;
-    padding: 60px;
-    margin: -35px 0 0 -160px;
+    grid-column: 3/4;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    grid-template-rows: repeat(9, 1fr);
     border-radius: 15px;
+    gap: 10px;
+  }
+
+  /*
+.locI1{
+  grid-row: 1/2;
 }
 
-.input {
-    display: flex;
-    background-color: transparent;
-    flex-direction: column;
-    justify-content: center;
-    align-items: right;
-    width: 350px;
+.locI2{
+  grid-row: 2/3;
+}
+
+.locI3{
+  grid-row: 3/4;
+}
+.locI4{
+  grid-row: 4/5;
+}
+
+.locI5{
+  grid-row: 5/6;
+}*/
+
+  .input {
+    display: grid;
+    grid-row: 1 / 2, 2 / 3, 3 / 4, 4 / 5;
+    grid-column: 2 / 7;
     padding: 10px;
-    margin: 10px;
     border-radius: 12px;
     border: 1px solid #000;
     font-family: 'Gilroy Light';
-    font-size: 1em;
+    font-size: 14px;
+  }
+
+  /*.locSelect1{
+  grid-row: 6 / 7;
 }
 
-/*  width: 100%;
-    max-width: 300px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;  
-    
+.locSelect2 {
+  grid-row: 7 / 8;
+}*/
 
-    max-width: 100%;
-    width: 300px;*/
-
-.select {
-    display: flex;
+  .select {
+    display: grid;
+    grid-row: 6 / 7, 7 / 8;
+    grid-column: 2 / 7;
     background-color: transparent;
-    flex-direction: column;
-    justify-content: center;
-    width: 373px;
     padding: 10px;
-    margin: 10px;
     border-radius: 12px;
     border: 1px solid #000;
     font-family: 'Gilroy Light';
-    font-size: 1em;
+    font-size: 14px;
+  }
+
+  /*.option {
+  width: 20px;
+  background-color: transparent;
+  padding: 12px 20px;
+  margin: 10px;
+  align-self: stretch;
+  overflow: hidden;
+  border: 1px solid #000;
+  font-family: 'Gilroy Light';
+  font-size: 1em;
+}*/
+
+  .textarea {
+    display: flex;
+    grid-row: 8 / 9;
+    grid-column: 2 / 7;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #000;
+    font-family: 'Gilroy Light';
+    font-size: 14px;
+  }
+
+  .button {
+    display: flex;
+    grid-row: 9 / 10;
+    grid-column: 3 / 6;
+    height: 30px;
+    padding: 14px 20px;
+    margin: 0px auto auto 57px;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid #000;
+    background: rgba(253, 195, 0);
+    font-family: 'Gilroy Extrabold';
+    font-size: 14px;
+  }
+
+  .input:hover {
+    transition: all 0.3s ease;
+    border-color: rgba(253, 195, 0);
+  }
+
+  .select:hover {
+    transition: all 0.3s ease;
+    border-color: rgba(253, 195, 0);
+  }
+
+  .textarea:hover {
+    transition: all 0.3s ease;
+    border-color: rgba(253, 195, 0);
+  }
+
+  .button:hover {
+    transition: all 0.3s ease;
+    background: rgba(253, 195, 0);
+    color: #fff;
+    margin: 2px auto auto 59px;
+    cursor: pointer;
+  }
+
 }
 
-/*.option {
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+  .containerFatherForm {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin-right: 50px;
+    margin-left: auto;
+  }
+
+  .containerText {
+    display: grid;
+    grid-column: 1/2;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: -30px auto auto auto;
+    gap: 10px;
+  }
+
+  .titleForm {
+    width: 300px;
+    grid-row: 1/2;
+    grid-column: 1/3;
+    width: 239px;
+    color: #FDC300;
+    font-family: 'Gilroy ExtraBold';
+    font-size: 40px;
+    font-style: normal;
+    line-height: normal;
+  }
+
+  .pForm {
+    width: 300px;
+    grid-row: 2/3;
+    grid-column: 1/3;
+    margin-top: -20px;
+    flex-shrink: 0;
+    align-self: stretch;
+    color: #000;
+    font-family: 'Gilroy Light';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .line {
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 1px;
+    height: 368px;
+    margin: 45px -20px auto 30px;
+    color: black;
+    /*transform: translateX(150px);*/
+  }
+
+  .containerForm {
+    display: grid;
+    grid-column: 3/4;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    grid-template-rows: repeat(9, 1fr);
+    border-radius: 15px;
+    gap: 10px;
+  }
+
+  /*
+  .locI1{
+    grid-row: 1/2;
+  }
+  
+  .locI2{
+    grid-row: 2/3;
+  }
+  
+  .locI3{
+    grid-row: 3/4;
+  }
+  .locI4{
+    grid-row: 4/5;
+  }
+  
+  .locI5{
+    grid-row: 5/6;
+  }*/
+
+  .input {
+    display: grid;
+    grid-row: 1 / 2, 2 / 3, 3 / 4, 4 / 5;
+    grid-column: 2 / 7;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #000;
+    font-family: 'Gilroy Light';
+    font-size: 14px;
+  }
+
+  /*.locSelect1{
+    grid-row: 6 / 7;
+  }
+  
+  .locSelect2 {
+    grid-row: 7 / 8;
+  }*/
+
+  .select {
+    display: grid;
+    grid-row: 6 / 7, 7 / 8;
+    grid-column: 2 / 7;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #000;
+    font-family: 'Gilroy Light';
+    font-size: 14px;
+  }
+
+  /*.option {
     width: 20px;
     background-color: transparent;
     padding: 12px 20px;
@@ -108,696 +496,417 @@
     border: 1px solid #000;
     font-family: 'Gilroy Light';
     font-size: 1em;
-}*/
+  }*/
 
-.textarea {
+  .textarea {
     display: flex;
-    background-color: transparent;
-    justify-content: center;
-    align-items: right;
-    width: 350px;
+    grid-row: 8 / 9;
+    grid-column: 2 / 7;
     padding: 10px;
-    margin: 10px;
     border-radius: 12px;
     border: 1px solid #000;
     font-family: 'Gilroy Light';
-    font-size: 1em;
-}
+    font-size: 14px;
+  }
 
-.button{
+  .button {
     display: flex;
+    grid-row: 9 / 10;
+    grid-column: 3 / 6;
     height: 30px;
     padding: 14px 20px;
-    position: absolute;
-    justify-content: center;
+    margin: 0px auto auto 57px;
     align-items: center;
-    margin: 520px auto auto 150px;
     border-radius: 15px;
     border: 1px solid #000;
     background: rgba(253, 195, 0);
     font-family: 'Gilroy Extrabold';
-    font-size: 1em;
-}
+    font-size: 14px;
+  }
 
-.input:hover{
+  .input:hover {
     transition: all 0.3s ease;
     border-color: rgba(253, 195, 0);
-}
+  }
 
-.select:hover{
+  .select:hover {
     transition: all 0.3s ease;
     border-color: rgba(253, 195, 0);
-}
+  }
 
-.textarea:hover{
+  .textarea:hover {
     transition: all 0.3s ease;
     border-color: rgba(253, 195, 0);
-}
+  }
 
-.button:hover{
+  .button:hover {
     transition: all 0.3s ease;
     background: rgba(253, 195, 0);
     color: #fff;
-    margin: 522.5px auto auto 148.5px;
+    margin: 2px auto auto 59px;
     cursor: pointer;
+  }
+
+
 }
 
-@media screen and (max-width: 1024px) {    
 
-    .containerFatherForm{
-        display: grid;
-        max-width: 100%;
-        width: 1920px;
-        grid-template-columns: repeat(2, 35%);
-        padding: 50px;
-        margin: 20px 100px;
-    }
 
-    .containerText{
-        display: grid;
-        grid-template-columns: repeat(1, 100%);
-        margin-top: -20px;
-    }
-    
-    .titleForm{
-        width: 350px;
-        color: #FDC300;
-        font-family: 'Gilroy ExtraBold';
-        font-size: 40px;
-        font-style: normal;
-        line-height: normal;
-        margin-top: 100px;
-        margin-bottom: -40px;
-    }
-    
-    .pForm{
-        height: 164px;
-        flex-shrink: 0;
-        align-self: stretch;
-        color: #000;
-        font-family: 'Gilroy Light';
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-    }
 
-    .line{
-        display: flex;
-        width: 1px;
-        height: 368px;
-        margin: 80px -20px 0 20px;
-        color: black;
-    }    
-    
-    .containerForm{
-        display: grid;
-        grid-column: 3;
-        grid-template-columns: repeat(1, 100%);
-        width: 200px;
-        margin: -60px 0 0 -350px;
-        border-radius: 15px;
-    }
-    
-    .input {
-        display: flex;
-        background-color: transparent;
-        flex-direction: column;
-        justify-content: center;
-        align-items: right;
-        width: 350px;
-        padding: 10px;
-        margin: 10px;
-        border-radius: 12px;
-        border: 1px solid #000;
-        font-family: 'Gilroy Light';
-        font-size: 1em;
-    }
-    
-    .select {
-        display: flex;
-        background-color: transparent;
-        flex-direction: column;
-        justify-content: center;
-        width: 373px;
-        padding: 10px;
-        margin: 10px;
-        border-radius: 12px;
-        border: 1px solid #000;
-        font-family: 'Gilroy Light';
-        font-size: 1em;
-    }
-    
-    /*.option {
-        width: 20px;
-        background-color: transparent;
-        padding: 12px 20px;
-        margin: 10px;
-        align-self: stretch;
-        overflow: hidden;
-        border: 1px solid #000;
-        font-family: 'Gilroy Light';
-        font-size: 1em;
-    }*/
-    
-    .textarea {
-        display: flex;
-        background-color: transparent;
-        justify-content: center;
-        align-items: right;
-        width: 350px;
-        padding: 10px;
-        margin: 10px;
-        border-radius: 12px;
-        border: 1px solid #000;
-        font-family: 'Gilroy Light';
-        font-size: 1em;
-    }
-    
-    .button{
-        display: flex;
-        height: 30px;
-        padding: 14px 20px;
-        position: absolute;
-        justify-content: center;
-        align-items: center;
-        margin: 518px auto auto 150px;
-        border-radius: 15px;
-        border: 1px solid #000;
-        background: rgba(253, 195, 0);
-        font-family: 'Gilroy Extrabold';
-        font-size: 1em;
-    }
 
-    .input:hover{
-        transition: all 0.3s ease;
-        border-color: rgba(253, 195, 0);
-    }
-    
-    .select:hover{
-        transition: all 0.3s ease;
-        border-color: rgba(253, 195, 0);
-    }
-    
-    .textarea:hover{
-        transition: all 0.3s ease;
-        border-color: rgba(253, 195, 0);
-    }
-    
-    .button:hover{
-        transition: all 0.3s ease;
-        background: rgba(253, 195, 0);
-        color: #fff;
-        margin: 523px auto auto 145px;
-        cursor: pointer;
-    }
-    
-}
-
-@media screen and (max-width: 768px) {
-  
-    .containerFatherForm{
-        display: grid;
-        max-width: 100%;
-        width: 480px;
-        grid-template-rows: repeat(3, 30%);
-        justify-content: center;
-    }
-
-    .containerText{
-        display: grid;
-        grid-row: 1;
-        grid-template-rows: repeat(2, 100%);
-        justify-content: center;
-        margin-left: 300px;
-    }  
-    
-    .titleForm{
-        display: grid;
-        width: 440px;
-        flex-shrink: 0;
-        align-self: stretch;
-        margin-top: 20px;
-        margin-left: -55px;
-        margin-bottom: 80px;
-        color: #FDC300;
-        font-family: 'Gilroy ExtraBold';
-        font-size: 40px;
-        font-style: normal;
-        line-height: normal;
-        justify-content: center;
-    }
-    
-    .pForm{
-        display: grid;
-        width: 410px;
-        flex-shrink: 0;
-        align-self: stretch;
-        margin-top: -100px;
-        margin-left: -55px;
-        color: #000;
-        font-family: 'Gilroy Light';
-        font-size: 20px;
-        font-style: normal;
-        line-height: normal;
-        justify-content: center;
-    }
-    
-    .line{
-        display: flex;
-        grid-row: 2;
-        rotate: 90deg;
-        width: 183px;
-        height: 200px;
-        color: black;
-        margin: 40px auto auto 200px;
-    }
-
-    .containerForm{
-        display: grid;
-        grid-row: 3;
-        width: 93px;
-        margin: -260px 500px 0 -145px;
-        justify-content: center;
-    }
-
-    .input {
-        display: flex;
-        background-color: transparent;
-        flex-direction: column;
-        justify-content: center;
-        width: 350px;
-        padding: 10px;
-        margin: 10px;
-        border-radius: 12px;
-        border: 1px solid #000;
-        font-family: 'Gilroy Light';
-        font-size: 0.94em;
-    }
-    
-    .select {
-        display: flex;
-        background-color: transparent;
-        flex-direction: column;
-        justify-content: center;
-        width: 373px;
-        padding: 10px;
-        margin: 10px;
-        border-radius: 12px;
-        border: 1px solid #000;
-        font-family: 'Gilroy Light';
-        font-size: 0.94em;
-    }
-    
-    .option {
-        width: 20px;
-        background-color: transparent;
-        padding: 12px 20px;
-        margin: 10px;
-        align-self: stretch;
-        overflow: hidden;
-        border: 1px solid #000;
-        font-family: 'Gilroy Light';
-        font-size: 0.94em;
-    }
-    
-    .textarea {
-        display: flex;
-        background-color: transparent;
-        justify-content: center;
-        width: 350px;
-        padding: 10px 10px 30px 10px;
-        margin: 10px;
-        border-radius: 12px;
-        border: 1px solid #000;
-        font-family: 'Gilroy Light';
-        font-size: 0.94em;
-    }
-    
-    .button{
-        display: flex;
-        height: 30px;
-        padding: 14px 20px;
-        position: absolute;
-        justify-content: center;
-        align-items: center;
-        margin: 500px auto auto 150px;
-        border-radius: 15px;
-        border: 1px solid #000;
-        background: rgba(253, 195, 0);
-        font-family: 'Gilroy Extrabold';
-        font-size: 1em;
-    }
-
-    .input:hover{
-        transition: all 0.3s ease;
-        border-color: rgba(253, 195, 0);
-    }
-    
-    .select:hover{
-        transition: all 0.3s ease;
-        border-color: rgba(253, 195, 0);
-    }
-    
-    .textarea:hover{
-        transition: all 0.3s ease;
-        border-color: rgba(253, 195, 0);
-    }
-    
-    .button:hover{
-        transition: all 0.3s ease;
-        background: rgba(253, 195, 0);
-        color: #fff;
-        margin: 505px auto auto 145px;
-        cursor: pointer;
-    }
-    
-}
 
 @media screen and (max-width: 480px) {
 
-    .containerFatherForm{
-        display: grid;
-        max-width: 100%;
-        width: 480px;
-        grid-template-rows: repeat(3, 30%);
-        justify-content: center;
-    }
+  .containerFatherForm {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-right: 50px;
+    margin-left: auto;
+  }
 
-    .containerText{
-        display: grid;
-        grid-row: 1;
-        grid-template-rows: repeat(2, 100%);
-        justify-content: center;
-        margin-left: 310px;
-    }  
-    
-    .titleForm{
-        display: grid;
-        width: 430px;
-        flex-shrink: 0;
-        align-self: stretch;
-        margin-top: 20px;
-        margin-left: -52.5px;
-        color: #FDC300;
-        font-family: 'Gilroy ExtraBold';
-        font-size: 40px;
-        font-style: normal;
-        line-height: normal;
-        justify-content: center;
-    }
-    
-    .pForm{
-        display: grid;
-        width: 410px;
-        flex-shrink: 0;
-        align-self: stretch;
-        margin-top: -100px;
-        margin-bottom: 20px;
-        margin-left: -50px;
-        color: #000;
-        font-family: 'Gilroy Light';
-        font-size: 20px;
-        font-style: normal;
-        line-height: normal;
-        justify-content: center;
-    }
-    
-    .line{
-        display: flex;
-        grid-row: 2;
-        rotate: 90deg;
-        width: 183px;
-        height: 200px;
-        color: black;
-        margin: 50px auto auto 225px;
-    }
+  .containerText {
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: auto auto -150px auto;
+    gap: 10px;
+  }
 
-    .containerForm{
-        display: grid;
-        grid-row: 3;
-        width: 93px;
-        margin: -260px 500px 0 -145px;
-        justify-content: center;
-        margin-left: -95px;
-    }
+  .titleForm {
+    width: 300px;
+    grid-row: 1/2;
+    grid-column: 1/3;
+    width: 239px;
+    color: #FDC300;
+    font-family: 'Gilroy ExtraBold';
+    font-size: 40px;
+    font-style: normal;
+    line-height: normal;
+  }
 
-    .input {
-        display: flex;
-        background-color: transparent;
-        flex-direction: column;
-        justify-content: center;
-        width: 350px;
-        padding: 10px;
-        margin: 10px;
-        border-radius: 12px;
-        border: 1px solid #000;
-        font-family: 'Gilroy Light';
-        font-size: 0.94em;
-    }
-    
-    .select {
-        display: flex;
-        background-color: transparent;
-        flex-direction: column;
-        justify-content: center;
-        width: 373px;
-        padding: 10px;
-        margin: 10px;
-        border-radius: 12px;
-        border: 1px solid #000;
-        font-family: 'Gilroy Light';
-        font-size: 0.94em;
-    }
-    
-    .option {
-        width: 20px;
-        background-color: transparent;
-        padding: 10px;
-        margin: 10px;
-        align-self: stretch;
-        overflow: hidden;
-        border: 1px solid #000;
-        font-family: 'Gilroy Light';
-        font-size: 0.94em;
-    }
-    
-    .textarea {
-        display: flex;
-        background-color: transparent;
-        justify-content: center;
-        width: 350px;
-        padding: 10px 10px 30px 10px;
-        margin: 10px;
-        border-radius: 12px;
-        border: 1px solid #000;
-        font-family: 'Gilroy Light';
-        font-size: 0.94em;
-    }
-    
-    .button{
-        display: flex;
-        height: 30px;
-        padding: 14px 20px;
-        position: absolute;
-        justify-content: center;
-        align-items: center;
-        margin: 500px auto auto 150px;
-        border-radius: 15px;
-        border: 1px solid #000;
-        background: rgba(253, 195, 0);
-        font-family: 'Gilroy Extrabold';
-        font-size: 1em;
-    }
+  .pForm {
+    width: 300px;
+    grid-row: 2/3;
+    grid-column: 1/3;
+    margin-top: -20px;
+    flex-shrink: 0;
+    align-self: stretch;
+    color: #000;
+    font-family: 'Gilroy Light';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 
-    .input:hover{
-        transition: all 0.3s ease;
-        border-color: rgba(253, 195, 0);
-    }
-    
-    .select:hover{
-        transition: all 0.3s ease;
-        border-color: rgba(253, 195, 0);
-    }
-    
-    .textarea:hover{
-        transition: all 0.3s ease;
-        border-color: rgba(253, 195, 0);
-    }
-    
-    .button:hover{
-        transition: all 0.3s ease;
-        background: rgba(253, 195, 0);
-        color: #fff;
-        margin: 505px auto auto 145px;
-        cursor: pointer;
-    }
-    
+  .line {
+    display: none;
+  }
+
+  .containerForm {
+    display: grid;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    margin: auto 100px auto auto;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    grid-template-rows: repeat(9, 1fr);
+    border-radius: 15px;
+    gap: 10px;
+  }
+
+  /*
+  .locI1{
+    grid-row: 1/2;
+  }
+  
+  .locI2{
+    grid-row: 2/3;
+  }
+  
+  .locI3{
+    grid-row: 3/4;
+  }
+  .locI4{
+    grid-row: 4/5;
+  }
+  
+  .locI5{
+    grid-row: 5/6;
+  }*/
+
+  .input {
+    display: grid;
+    grid-row: 1 / 2, 2 / 3, 3 / 4, 4 / 5;
+    grid-column: 2 / 7;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #000;
+    font-family: 'Gilroy Light';
+    font-size: 14px;
+  }
+
+  /*.locSelect1{
+    grid-row: 6 / 7;
+  }
+  
+  .locSelect2 {
+    grid-row: 7 / 8;
+  }*/
+
+  .select {
+    display: grid;
+    grid-row: 6 / 7, 7 / 8;
+    grid-column: 2 / 7;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #000;
+    font-family: 'Gilroy Light';
+    font-size: 14px;
+  }
+
+  /*.option {
+    width: 20px;
+    background-color: transparent;
+    padding: 12px 20px;
+    margin: 10px;
+    align-self: stretch;
+    overflow: hidden;
+    border: 1px solid #000;
+    font-family: 'Gilroy Light';
+    font-size: 1em;
+  }*/
+
+  .textarea {
+    display: flex;
+    grid-row: 8 / 9;
+    grid-column: 2 / 7;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #000;
+    font-family: 'Gilroy Light';
+    font-size: 14px;
+  }
+
+  .button {
+    display: flex;
+    grid-row: 9 / 10;
+    grid-column: 3 / 6;
+    height: 30px;
+    padding: 14px 20px;
+    margin: 0px auto auto 57px;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid #000;
+    background: rgba(253, 195, 0);
+    font-family: 'Gilroy Extrabold';
+    font-size: 14px;
+  }
+
+  .input:hover {
+    transition: all 0.3s ease;
+    border-color: rgba(253, 195, 0);
+  }
+
+  .select:hover {
+    transition: all 0.3s ease;
+    border-color: rgba(253, 195, 0);
+  }
+
+  .textarea:hover {
+    transition: all 0.3s ease;
+    border-color: rgba(253, 195, 0);
+  }
+
+  .button:hover {
+    transition: all 0.3s ease;
+    background: rgba(253, 195, 0);
+    color: #fff;
+    margin: 2px auto auto 59px;
+    cursor: pointer;
+  }
+
 }
+
+
+
+
+
 
 @media screen and (max-width: 320px) {
 
-    .formCenter{
-        width: 100%;
-        height: auto;
-    }
-    
+  .containerFatherForm {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-right: 50px;
+    margin-left: auto;
+  }
 
-    .containerFatherForm{
-        display: grid;
-        max-width: 100%;
-        width: 480px;
-        grid-template-rows: repeat(3, 30%);
-        justify-content: center;
-    }
+  .containerText {
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: auto auto -150px auto;
+    gap: 10px;
+  }
 
-    .containerText{
-        display: grid;
-        grid-row: 1;
-        grid-template-rows: repeat(2, 100%);
-        justify-content: center;
-        margin-left: 170px;
-    }  
-    
-    .titleForm{
-        display: grid;
-        width: 430px;
-        flex-shrink: 0;
-        align-self: stretch;
-        margin-top: 20px;
-        margin-left: -40px;
-        color: #FDC300;
-        font-family: 'Gilroy ExtraBold';
-        font-size: 40px;
-        font-style: normal;
-        line-height: normal;
-        justify-content: center;
-    }
-    
-    .pForm{
-        display: grid;
-        width: 380px;
-        flex-shrink: 0;
-        align-self: stretch;
-        margin-top: -100px;
-        margin-bottom: 20px;
-        margin-left: -40px;
-        color: #000;
-        font-family: 'Gilroy Light';
-        font-size: 20px;
-        font-style: normal;
-        line-height: normal;
-        justify-content: center;
-    }
+  .titleForm {
+    width: 300px;
+    grid-row: 1/2;
+    grid-column: 1/3;
+    width: 239px;
+    color: #FDC300;
+    font-family: 'Gilroy ExtraBold';
+    font-size: 40px;
+    font-style: normal;
+    line-height: normal;
+  }
 
-    .line{
-        display: flex;
-        grid-row: 2;
-        rotate: 90deg;
-        width: 183px;
-        height: 200px;
-        color: black;
-        margin: 50px auto auto 120px;
-    }
+  .pForm {
+    width: 300px;
+    grid-row: 2/3;
+    grid-column: 1/3;
+    margin-top: -20px;
+    flex-shrink: 0;
+    align-self: stretch;
+    color: #000;
+    font-family: 'Gilroy Light';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 
-    .containerForm{
-        display: grid;
-        grid-row: 3;
-        width: 80px;
-        margin: -260px 500px 0 -145px;
-        justify-content: center;
-        margin-left: -145px;
-    }
+  .line {
+    display: none;
+  }
 
-    .input {
-        display: flex;
-        background-color: transparent;
-        flex-direction: column;
-        justify-content: center;
-        width: 350px;
-        padding: 10px;
-        margin: 10px;
-        border-radius: 12px;
-        border: 1px solid #000;
-        font-family: 'Gilroy Light';
-        font-size: 0.94em;
-    }
-    
-    .select {
-        display: flex;
-        background-color: transparent;
-        flex-direction: column;
-        justify-content: center;
-        width: 373px;
-        padding: 10px;
-        margin: 10px;
-        border-radius: 12px;
-        border: 1px solid #000;
-        font-family: 'Gilroy Light';
-        font-size: 0.94em;
-    }
-    
-    .option {
-        width: 20px;
-        background-color: transparent;
-        padding: 12px 20px;
-        margin: 10px;
-        align-self: stretch;
-        overflow: hidden;
-        border: 1px solid #000;
-        font-family: 'Gilroy Light';
-        font-size: 0.94em;
-    }
-    
-    .textarea {
-        display: flex;
-        background-color: transparent;
-        justify-content: center;
-        width: 350px;
-        padding: 10px 10px 30px 10px;
-        margin: 10px;
-        border-radius: 12px;
-        border: 1px solid #000;
-        font-family: 'Gilroy Light';
-        font-size: 0.94em;
-    }
-    
-    .button{
-        display: flex;
-        height: 30px;
-        padding: 14px 20px;
-        position: absolute;
-        justify-content: center;
-        align-items: center;
-        margin: 500px auto auto 180px;
-        border-radius: 15px;
-        border: 1px solid #000;
-        background: rgba(253, 195, 0);
-        font-family: 'Gilroy Extrabold';
-        font-size: 1em;
-    }
+  .containerForm {
+    display: grid;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    margin: auto 100px auto auto;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    grid-template-rows: repeat(9, 1fr);
+    border-radius: 15px;
+    gap: 10px;
+  }
 
-    .input:hover{
-        transition: all 0.3s ease;
-        border-color: rgba(253, 195, 0);
-    }
-    
-    .select:hover{
-        transition: all 0.3s ease;
-        border-color: rgba(253, 195, 0);
-    }
-    
-    .textarea:hover{
-        transition: all 0.3s ease;
-        border-color: rgba(253, 195, 0);
-    }
-    
-    .button:hover{
-        transition: all 0.3s ease;
-        background: rgba(253, 195, 0);
-        color: #fff;
-        margin: 505px auto auto 175px;
-        cursor: pointer;
-    }
-    
+  /*
+  .locI1{
+    grid-row: 1/2;
+  }
+  
+  .locI2{
+    grid-row: 2/3;
+  }
+  
+  .locI3{
+    grid-row: 3/4;
+  }
+  .locI4{
+    grid-row: 4/5;
+  }
+  
+  .locI5{
+    grid-row: 5/6;
+  }*/
+
+  .input {
+    display: grid;
+    grid-row: 1 / 2, 2 / 3, 3 / 4, 4 / 5;
+    grid-column: 2 / 7;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #000;
+    font-family: 'Gilroy Light';
+    font-size: 14px;
+  }
+
+  /*.locSelect1{
+    grid-row: 6 / 7;
+  }
+  
+  .locSelect2 {
+    grid-row: 7 / 8;
+  }*/
+
+  .select {
+    display: grid;
+    grid-row: 6 / 7, 7 / 8;
+    grid-column: 2 / 7;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #000;
+    font-family: 'Gilroy Light';
+    font-size: 14px;
+  }
+
+  /*.option {
+    width: 20px;
+    background-color: transparent;
+    padding: 12px 20px;
+    margin: 10px;
+    align-self: stretch;
+    overflow: hidden;
+    border: 1px solid #000;
+    font-family: 'Gilroy Light';
+    font-size: 1em;
+  }*/
+
+  .textarea {
+    display: flex;
+    grid-row: 8 / 9;
+    grid-column: 2 / 7;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #000;
+    font-family: 'Gilroy Light';
+    font-size: 14px;
+  }
+
+  .button {
+    display: flex;
+    grid-row: 9 / 10;
+    grid-column: 3 / 6;
+    height: 30px;
+    padding: 14px 20px;
+    margin: 0px auto auto 57px;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid #000;
+    background: rgba(253, 195, 0);
+    font-family: 'Gilroy Extrabold';
+    font-size: 14px;
+  }
+
+  .input:hover {
+    transition: all 0.3s ease;
+    border-color: rgba(253, 195, 0);
+  }
+
+  .select:hover {
+    transition: all 0.3s ease;
+    border-color: rgba(253, 195, 0);
+  }
+
+  .textarea:hover {
+    transition: all 0.3s ease;
+    border-color: rgba(253, 195, 0);
+  }
+
+  .button:hover {
+    transition: all 0.3s ease;
+    background: rgba(253, 195, 0);
+    color: #fff;
+    margin: 2px auto auto 59px;
+    cursor: pointer;
+  }
 }
