@@ -195,22 +195,48 @@
 
 @media screen and (max-width: 480px) and (min-width: 319px) {
 
-  .info,
-  .obj,
+  .info{
+    max-width: 100%;
+    font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: -0px;
+  }
+
+  .parrafo1 {
+    max-width: 100%;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: -25px;
+  }
+
+  .obj {
+    max-width: 100%;
+    font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: -20px;
+  }
   .nosotros {
     max-width: 100%;
     font-size: 35px;
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: 0px;
   }
 
-  .parrafo1,
   .parrafo2 {
+    max-width: 100%;
     font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: -15px;
   }
 
   .info-image {
     max-width: 100%;
     height: auto;
+    margin-left: -35px;
   }
 }
