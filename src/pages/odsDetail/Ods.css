@@ -116,29 +116,6 @@ h3 {
 }
 
 
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-
-  25% {
-    transform: translateX(-20%);
-  }
-
-  50% {
-    transform: translateX(0);
-  }
-
-  75% {
-    transform: translateX(20%);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
-
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .containerr {
     margin: 50px 0%;
@@ -192,28 +169,6 @@ h3 {
     width: 18%;
     margin: 0 5px;
     margin-bottom: 50px;
-  }
-
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-
-    25% {
-      transform: translateX(-20%);
-    }
-
-    50% {
-      transform: translateX(0);
-    }
-
-    75% {
-      transform: translateX(-20%);
-    }
-
-    100% {
-      transform: translateX(0);
-    }
   }
 
   .btnn {
@@ -306,34 +261,12 @@ h3 {
     grid-template-columns: repeat(3, 0fr);
   }
 
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-
-    25% {
-      transform: translateX(-20%);
-    }
-
-    50% {
-      transform: translateX(0);
-    }
-
-    75% {
-      transform: translateX(-20%);
-    }
-
-    100% {
-      transform: translateX(0);
-    }
-  }
-
   .btnn {
-    width: 28%;
+    width: 30%;
     margin: 15px 5px 15px 5px;
   }
 
   .btna {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
