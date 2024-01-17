@@ -1,26 +1,25 @@
 import React from "react";
-import Navbar from "../../../components/navbar/Navbar";
 import Info from "../../../components/info/Info";
 import Portfolio from "../../../components/portfolio/Portfolio";
 import Banner from "../../../components/banner/Banner";
-import Footer from "../../../components/footer/Footer";
 import Up from "../../../components/up/Up";
-import  Form  from "../../../components/form/Form";
+import Form from "../../../components/form/Form";
 import Services from "../../../components/services/Services";
+import Layout from "../../../components/layout/Layout";
 
 const Home = () => {
   return (
     <>
-    <Navbar />
-    <Banner />
-    <Services />
-    <Info />
-    <Portfolio />|
-    <Form />
-    <Up />
-    <Footer />
+      <Layout>
+        <Banner />
+        <Services />
+        <Info />
+        <Portfolio />|
+        <Form />
+        <Up />
+      </Layout>
     </>
-  )
-}
+  );
+};
 
 export default Home;
