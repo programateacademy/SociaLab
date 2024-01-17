@@ -12,6 +12,12 @@ const Banner = () => {
           <p className="subtitulo">
             {" "}
             <LuCheck />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
             Seguridad total
           </p>
           <p className="subtitulo">
