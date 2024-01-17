@@ -20,8 +20,8 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-top: 50px;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 
@@ -63,7 +63,6 @@
   .info, .obj, .nosotros {
     max-width: 100%;
     margin: 10px;
-    padding: 10px;
     font-size: 25px;
   }
   .parrafo1, .parrafo2 {
@@ -85,7 +84,7 @@
   .info, .obj, .nosotros {
     max-width: 100%;
     margin: 10px;
-    padding: 10px;
+    font-size: 25px;
   }
   .parrafo1, .parrafo2 {
     font-size: 20px;
@@ -106,13 +105,11 @@
   .info, .obj, .nosotros {
     max-width: 100%;
     margin: 10px;
-    padding: 10px;
     font-size: 25px;
   }
   .parrafo1, .parrafo2 {
     font-size: 20px;
   }
-
   .grid {
     grid-template-columns: 1fr;
     margin: 10px;
@@ -128,13 +125,11 @@
   .info, .obj, .nosotros {
     max-width: 100%;
     margin: 10px;
-    padding: 10px;
     font-size: 25px;
   }
   .parrafo1, .parrafo2 {
     font-size: 20px;
   }
-
 
   .grid {
     grid-template-columns: 1fr;
@@ -151,7 +146,6 @@
   .info, .obj, .nosotros {
     max-width: 100%;
     margin: 10px;
-    padding: 10px;
     font-size: 20px;
   }
   .parrafo1, .parrafo2 {
@@ -173,7 +167,6 @@
   .info, .obj, .nosotros {
     max-width: 100%;
     margin: 10px;
-    padding: 10px;
     font-size: 35px;
   }
   .parrafo1, .parrafo2 {
@@ -195,9 +188,9 @@
   .info, .obj, .nosotros {
     max-width: 100%;
     margin: 10px;
-    padding: 10px;
     font-size: 35px;
   }
+
   .parrafo1, .parrafo2 {
     font-size: 18px;
   }
@@ -218,9 +211,9 @@
   .info, .obj, .nosotros {
     max-width: 100%;
     margin: 10px;
-    padding: 10px;
     font-size: 35px;
   }
+
   .parrafo1, .parrafo2 {
     font-size: 18px;
   }
